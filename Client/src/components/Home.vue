@@ -1,7 +1,8 @@
 <template>
   <div class='hello'>
     <a href="#" class="btn btn-danger">click here</a>
-    <h1>{{message}}</h1>     
+    <h1>{{message}}</h1>
+    <button @click="test()">toast text</button>
   </div>
 
 </template>
@@ -12,6 +13,11 @@ export default {
   data () {
     return {
         message: "this is home"
+    }
+  },
+  methods: {
+    test: function(){
+      this.$toasted.show('rocket science');
     }
   }
 }
