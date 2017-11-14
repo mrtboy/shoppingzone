@@ -1,5 +1,6 @@
 <template>
   <div class='hello'>
+    <a href="#" class="btn btn-danger">click here</a>
     <h1>{{message}}</h1>     
   </div>
 
