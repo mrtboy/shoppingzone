@@ -11,8 +11,16 @@ an example for an api at the moment is:
 http://localhost:2000/tasks
 which you need to utilize it using http get verb, in this case your browser may be helpful.
 
+mongodb)
+in the case you need to run the server code on your machine you have to be aware of existense of mongo server on your machine.
+following few steps could be helpful in order to run mongo server:
+
+1)installation of compatible mongo server
+2)creation of folder called data on your c drive in the case you are running your code on window or hosting directory on linux
+3)navigate to bin folder, then run mongod
 
 
+---------------------------------------------------------------------------------------------------------------
 to run client)
 
 after you clone the code, in the client directory run the following command to install the dependencies:
@@ -22,6 +30,10 @@ npm run dev
 
 its worth mentioning that currently the client code is serving at port 8080 so you can check it out at:
 localhost:8080
+
+---------------------------------------------------------------------------------------------------------------
+
+
 
 
 
