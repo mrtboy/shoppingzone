@@ -1,2 +1,4 @@
 farzin:
-creating sample repositoriy and validation support for data being received by controller actions
+creating sample repositoriy(done)
+validation support for data being received by controller actions
+authentication
