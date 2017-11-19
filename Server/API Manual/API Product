@@ -1,0 +1,51 @@
+Product APIs
+{
+    Add product:
+    {
+        Post /products
+            Model: {
+                name: String,
+                price: Number,
+                location: {
+                    lat: Number,
+                    long: Number, 
+                    street: String,
+                    streetNo: Number,
+                    houseNo: Number,
+                    Plz: Number,
+                    city: String,
+                    country: String
+                    },
+                summary: String,
+                description: String,
+                condition: String,
+                available: Boolean,
+                category:  String,
+            }
+            Expected Result:
+            {
+                Add Product to Database
+            }
+    }
+    Edit Product:
+    {
+        PUT /products/:id
+        Expexted Result {
+            edit the product that related to Id.
+        }
+    }
+    Delete Product:
+    {
+        Delete /products/:id
+        Expected Result {
+            delete the product from database
+        }
+    }
+    Get Product:
+    {
+        Get /products/:id
+        Expexted Result {
+            Get one Product with Id that given in Params
+        }
+    }
+}
