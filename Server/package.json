@@ -13,7 +13,7 @@
             "latest"
         ]
     },
-    "author": "Farzin",
+    "author": "Farzin, Mohammadreza Taleghani Esfahani",
     "license": "ISC",
     "dependencies": {
         "@types/body-parser": "^1.16.8",
@@ -28,6 +28,7 @@
         "mongoose": "^4.13.2"
     },
     "devDependencies": {
+        "@types/node": "^8.0.53",
         "babel-cli": "^6.26.0",
         "babel-preset-latest": "^6.24.1",
         "nodemon": "^1.12.1"

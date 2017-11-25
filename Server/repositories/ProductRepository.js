@@ -80,7 +80,7 @@ module.exports = app => {
             product.location.street = model.street
             product.location.streetNo = model.streetNo
             product.location.houseNo = model.houseNo
-            product.location.Plz = model.Plz
+            product.location.plz = model.plz
             product.location.city = model.city
             product.location.country = model.country
             product.summary = model.summary

@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-require('mongoose-double')(mongoose);
+
 var SchemaTypes = mongoose.Schema.Types;
 
 module.exports = app => {
