@@ -1,31 +1,42 @@
 <template>
-  <div class="row">
-			<div class="center-block col-md-5 col-sm-6 col-xs-12">
-				<div class="panel panel-default loginPanel">
-					<div class="panel-heading text-center">Members log in</div>
-					<div class="panel-body">
-						<form class="loginForm">
-							<div class="form-group">
-								<label for="userName">User Name *</label>
-								<input type="text" class="form-control" id="userName">
-								<p class="help-block">Enter your Foundation username.</p>
-							</div>
-							<div class="form-group">
-								<label for="userPassword">Password *</label>
-								<input type="password" class="form-control" id="userPassword">
-								<p class="help-block">Enter the password that accompanies your username.</p>
-							</div>
-							<div class="form-group">
-								<button type="submit" class="btn btn-primary pull-left">Log In</button>
-								<a href="#" class="pull-right link">Fogot Password?</a>
-							</div>
-						</form>
-					</div>
-					<div class="panel-footer text-center">
-						<p>Not a member yet? <a href="sign-up.html" class="link">Sign up</a></p>
-					</div>
-				</div>
-			</div>
+  <div class="row justify-content-center">
+			<div class="card m-5 p-2" style="width: 30rem;">
+  <div class="card-body">
+    <h4 class="card-title">Zign In Bitte</h4>
+    <h6 class="card-subtitle mb-4 text-muted ">please enter your credentials below</h6>
+    
+
+
+
+<form>
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-4 col-form-label">Email</label>
+    <div class="col-sm-8">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputPassword3" class="col-sm-4 col-form-label">Password</label>
+    <div class="col-sm-8">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+    </div>
+  </div>
+ 
+  <div class="form-group row">
+    <div class="col-sm-12 col-md-6">
+      <button type="submit" class="btn btn-primary" style="width: 10rem" >Sign in</button>
+    </div>
+    <div class="col-sm-12 col-md-6">
+      <a href="#" class="card-link">need an account?</a>
+    </div>
+  </div>
+</form>
+
+
+
+
+  </div>
+</div>
 		</div>
 </template>
 

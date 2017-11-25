@@ -1,10 +1,13 @@
 const auth = {
-    tokenExist: () => {
+    isSignedIn: () => {
         const token = localStorage.getItem('authToken');
         console.log(token);
     },
     createToken: (token) => {
         localStorage.setItem("authToken", token);
+    },
+    isTokenExpired: () => {
+        const token = localStorage.getItem('authToken');
     }
 }
 

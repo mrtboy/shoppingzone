@@ -8,7 +8,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <router-link class="nav-link" :to="'/'">Home <span class="sr-only">(current)</span></router-link>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Link</a>
@@ -27,12 +27,11 @@
       <li class="nav-item">
         <a class="nav-link disabled" href="#">Disabled</a>
       </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <button @click="test1()" class="btn btn-outline-primary my-2 my-sm-0 m-2" type="submit">Sign up</button>
-      <button @click="testen()"  class="btn btn-outline-success my-2 my-sm-0 m-2" type="submit">Sign in</button>
-    </form>
-  </div>
+    </ul>    
+      <router-link class="btn btn-outline-primary my-2 my-sm-0 m-2" :to="'register'">Sign up</router-link>
+      <router-link v-show="signinVisibility" class="btn btn-outline-success my-2 my-sm-0 m-2" :to="'login'">Sign in</router-link>          
+      <button @click="testen" class="btn btn-outline-success my-2 my-sm-0 m-2">check the current</button>  
+      </div>
 </nav>
 </template>
 
@@ -43,7 +42,9 @@ export default {
   name: 'Navigationbar',
   data () {
     return {
-        message: "this is home"
+        message: "this is home",
+        signupVisibility: true,
+        signinVisibility: true
     }
   },
   methods: {
@@ -54,9 +55,33 @@ export default {
         this.$authInspector.tokenExist();
     },
     testen: function() {
-        this.$authInspector.createToken("token");
-    }    
-  }
+        
+    }  
+  },
+  mounted: function() {   
+     if(this.$router.history.current.path == "/login")
+        this.signinVisibility = false;
+    else
+    this.signinVisibility = true;
+    if(this.$router.history.current.path == "/signup")
+        this.signupVisibility = false;
+    else
+    this.signupVisibilitys = true;
+  },
+  watch: {
+        '$route': function(value) {
+          console.log(value.path);
+            if(value.path == "/login")
+                this.signinVisibility = false;
+            else
+                this.signinVisibility = true;
+
+            if(value.path == "/signup")
+                this.signupVisibility = false;
+            else
+                this.signupVisibility = true;
+        }
+    }
 }
 </script>
 
