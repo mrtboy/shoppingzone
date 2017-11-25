@@ -63,7 +63,7 @@ export default {
         this.signinVisibility = false;
     else
     this.signinVisibility = true;
-    if(this.$router.history.current.path == "/signup")
+    if(this.$router.history.current.path == "/register")
         this.signupVisibility = false;
     else
     this.signupVisibilitys = true;
@@ -76,7 +76,7 @@ export default {
             else
                 this.signinVisibility = true;
 
-            if(value.path == "/signup")
+            if(value.path == "/register")
                 this.signupVisibility = false;
             else
                 this.signupVisibility = true;

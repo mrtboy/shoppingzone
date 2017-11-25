@@ -8,14 +8,16 @@ module.exports = app => {
         if (req.body.email && req.body.password) {
             const email = req.body.email;
             const password = req.body.password;
-            console.log(email, password);
             Profiles.findOne({ where: { email: email } })
                 .then(profile => {
                     if (Profiles.isPassword(profile.password, password)) {
-                        const payload = { id: profile.id };
-                        res.json({
-                            token: jwt.encode(payload, cfg.jwtSecret)
-                        });
+                        const content = { id: profile.id };
+                        var token = jwt.encode({ id: content.id }, cfg.jwtSecret);
+                        res.json(token);
+                        // {
+                        //     id: content.id,
+                        //     expiresIn: "2min"
+                        // }, jwt.encode(content, cfg.jwtSecret));
                     } else {
                         res.sendStatus(401);
                     }

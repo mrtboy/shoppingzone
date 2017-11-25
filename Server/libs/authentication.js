@@ -8,8 +8,8 @@ module.exports = app => {
         secretOrKey: cfg.jwtSecret,
         jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken()
     };
-    const strategy = new Strategy(params, (payload, authorized) => {
-        Profiles.findById(payload.id)
+    const strategy = new Strategy(params, (load, authorized) => {
+        Profiles.findById(load.id)
             .then(profile => {
                 if (profile) {
                     console.log(profile.id);
@@ -20,7 +20,7 @@ module.exports = app => {
                     });
                 }
                 return authorized(null, { success: false, profile: null });
-            })            
+            })
             .catch(error => authorized(error, null));
     });
     passport.use(strategy);
@@ -30,7 +30,9 @@ module.exports = app => {
             return passport.initialize();
         },
         authenticate: () => {
-            return passport.authenticate("jwt", cfg.jwtSession);
+            var authentication = passport.authenticate("jwt", cfg.jwtSession);
+            console.log(authentication);
+            return authentication;
         }
     };
     app.xticate = authUtil;
