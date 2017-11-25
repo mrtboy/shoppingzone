@@ -15,11 +15,12 @@ module.exports = app => {
                     console.log(profile.id);
                     return authorized(null, {
                         id: profile.id,
-                        email: profile.email
+                        email: profile.email,
+                        role: profile.role
                     });
                 }
                 return authorized(null, { success: false, profile: null });
-            })
+            })            
             .catch(error => authorized(error, null));
     });
     passport.use(strategy);

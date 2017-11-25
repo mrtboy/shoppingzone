@@ -28,7 +28,11 @@ module.exports = (sequelize, DataType) => {
             validate: {
                 notEmpty: true
             }
-        }
+        },
+        role: {
+            type: DataType.STRING,            
+            allowNull: false,            
+        },
     }, {
         hooks: {
             beforeCreate: profile => {

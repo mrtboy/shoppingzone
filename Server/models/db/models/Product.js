@@ -1,5 +1,4 @@
 import mongoose from 'mongoose';
-require('mongoose-double')(mongoose);
 var SchemaTypes = mongoose.Schema.Types;
 
 module.exports = app => {
@@ -16,7 +15,7 @@ module.exports = app => {
             street: String,
             streetNo: Number,
             houseNo: Number,
-            Plz: Number,
+            plz: Number,
             city: String,
             country: String
             },

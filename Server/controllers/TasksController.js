@@ -6,10 +6,11 @@ module.exports = app => {
     const repo = app.repositories.TaskRepository;
     const validator = app.models.viewmodels.task.TaskValidationViewModel;
 
-    app.get("/taskq", app.xticate.authenticate, (req, res) => {
+    app.get("/taskq", app.xticate.authenticate(), (req, res) => {
+        //if(req.user.role=="customer")
         const tasks = app.libs.db.init.models.Tasks;
         tasks.findAll({}).then(tasks => {
-            res.json({ tasksq: tasks });
+            res.json({ profile: req.user });
         });
     });
 
