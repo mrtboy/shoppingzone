@@ -28,9 +28,8 @@
         <a class="nav-link disabled" href="#">Disabled</a>
       </li>
     </ul>    
-      <router-link class="btn btn-outline-primary my-2 my-sm-0 m-2" :to="'register'">Sign up</router-link>
-      <router-link v-show="signinVisibility" class="btn btn-outline-success my-2 my-sm-0 m-2" :to="'login'">Sign in</router-link>          
-      <button @click="testen" class="btn btn-outline-success my-2 my-sm-0 m-2">check the current</button>  
+      <router-link v-show="signupVisibility" class="btn btn-outline-primary my-2 my-sm-0 m-2" :to="'register'">Sign up</router-link>
+      <router-link v-show="signinVisibility" class="btn btn-outline-success my-2 my-sm-0 m-2" :to="'login'">Sign in</router-link>                
       </div>
 </nav>
 </template>
