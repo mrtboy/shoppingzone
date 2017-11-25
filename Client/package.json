@@ -2,7 +2,7 @@
   "name": "Client",
   "version": "1.0.0",
   "description": "nothing much ast the moment",
-  "author": "",
+  "author": "farzin",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",

@@ -12,4 +12,9 @@ module.exports = app => {
         origin: ["http://localhost:8080"],
         methods: ["GET", "POST", "PUT", "DELETE"]
     }))
+    app.use(app.libs.authentication.initialize());
+    app.use((req, res, next) => {
+        delete req.body.id;
+        next();
+    });
 };
