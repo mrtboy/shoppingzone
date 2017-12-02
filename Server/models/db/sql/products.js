@@ -31,12 +31,12 @@ module.exports = (sequelize, DataTypes) => {
             allowNull: true,
             defaultValue: ""
         },
-        available: {
-            type: DataTypes.BOOLEAN,
-            allowNull: false,
-            defaultValue: true
+        categoryId: {
+            type: DataTypes.INTEGER,
+            allowNull: true,
+            defaultValue: ""
         },
-        isActive: {
+        available: {
             type: DataTypes.BOOLEAN,
             allowNull: false,
             defaultValue: true
@@ -45,8 +45,8 @@ module.exports = (sequelize, DataTypes) => {
         classMethods: {
             associate: (models) => {
                 available: true;
-                isActive: true;
                 Products.belongsTo(models.Users);
+                Products.belongsTo(models.Categories, { foreignKey: 'categoryId', targetKey: 'id'});
             }
         }
     });

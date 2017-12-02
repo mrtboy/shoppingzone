@@ -4,23 +4,12 @@ Product APIs
     {
         Post /products
             Model: {
-                name: String,
-                price: Number,
-                location: {
-                    lat: Number,
-                    long: Number, 
-                    street: String,
-                    streetNo: Number,
-                    houseNo: Number,
-                    Plz: Number,
-                    city: String,
-                    country: String
-                    },
-                summary: String,
+                name: String, Not Null = true
+                price: DOUBLE,
                 description: String,
-                condition: String,
+                condition: String, Not Null = true
                 available: Boolean,
-                category:  String,
+                categoryId:  String, Not Null = true (This Id should come from Category table)
             }
             Expected Result:
             {
@@ -47,5 +36,10 @@ Product APIs
         Expexted Result {
             Get one Product with Id that given in Params
         }
+        Get /products
+        Expexted Result {
+            Get all Products 
+        }
+        
     }
 }

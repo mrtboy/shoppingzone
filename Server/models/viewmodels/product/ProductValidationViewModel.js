@@ -9,7 +9,7 @@ module.exports = app => {
                 check('name').exists().withMessage("Name of product can not be empty"),
                 check('description').exists().withMessage("description can not be empty"),
                 check('condition').exists().withMessage("Condition of product cannot be empty"),
-                
+                check('categoryId').exists().withMessage("Category of product cannot be empty"),
             ]
         },
         response: (req, res) => {
