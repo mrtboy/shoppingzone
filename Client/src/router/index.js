@@ -47,13 +47,10 @@ export default new Router({
         name: 'Products',
         component: Products
       },
-<<<<<<< HEAD
       {
         path: '/testapi',
         name: 'TestApi',
         component: TestApi
-      }
-=======
->>>>>>> 663aafb64f09311a739c8fbe9b1e66bcf59b4447
+      },
     ]
 });
