@@ -1,4 +1,5 @@
 <template>
+
   <div class="container">
     <div class="row">
 
@@ -44,7 +45,6 @@
   </form>
       </div>
     </div>
-  </div>
 
 </template>
 
@@ -53,6 +53,7 @@
     name: 'Products',
     data () {
       return {
+
         items: [
           { id: 1, name: 'notebook' },
           { id: 2, name: 'Mobile' },
@@ -75,7 +76,11 @@
         if(index !== -1)
           this.cart.splice(index, 1);
       }
-    }
+
+
+      }
+    },
+    
   }
 </script>
 
