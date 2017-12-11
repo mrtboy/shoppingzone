@@ -11,6 +11,9 @@
         <router-link class="nav-link" :to="'/'">Home <span class="sr-only">(current)</span></router-link>
       </li>
       <li class="nav-item">
+        <rounter-link class="nav-link" :to="/products">Products<span class="sr-only">(current)</span></rounter-link>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="#">Link</a>
       </li>
       <li class="nav-item dropdown">
@@ -27,9 +30,9 @@
       <li class="nav-item">
         <a class="nav-link disabled" href="#">Disabled</a>
       </li>
-    </ul>    
+    </ul>
       <router-link v-show="signupVisibility" class="btn btn-outline-primary my-2 my-sm-0 m-2" :to="'register'">Sign up</router-link>
-      <router-link v-show="signinVisibility" class="btn btn-outline-success my-2 my-sm-0 m-2" :to="'login'">Sign in</router-link>                
+      <router-link v-show="signinVisibility" class="btn btn-outline-success my-2 my-sm-0 m-2" :to="'login'">Sign in</router-link>
       </div>
 </nav>
 </template>
@@ -54,10 +57,10 @@ export default {
         this.$authInspector.tokenExist();
     },
     testen: function() {
-        
-    }  
+
+    }
   },
-  mounted: function() {   
+  mounted: function() {
      if(this.$router.history.current.path == "/login")
         this.signinVisibility = false;
     else
