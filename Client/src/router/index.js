@@ -7,6 +7,7 @@ import Storage from '@/components/Storage'
 import Login from '@/components/Login'
 import Register from '@/components/Register'
 import Products from '@/components/Products'
+import TestApi from '@/components/TestApi'
 Vue.use(Router)
 
 
@@ -45,6 +46,11 @@ export default new Router({
         path: '/products',
         name: 'Products',
         component: Products
+      },
+      {
+        path: '/testapi',
+        name: 'TestApi',
+        component: TestApi
       },
     ]
 });

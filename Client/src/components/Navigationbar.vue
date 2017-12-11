@@ -10,8 +10,8 @@
       <li class="nav-item active">
         <router-link class="nav-link" :to="'/'">Home <span class="sr-only">(current)</span></router-link>
       </li>
-      <li class="nav-item">
-        <rounter-link class="nav-link" :to="/products">Products<span class="sr-only">(current)</span></rounter-link>
+      <li class="nav-item active">
+        <router-link class="nav-link" :to="'/Products'">Products <span class="sr-only">(current)</span></router-link>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Link</a>
