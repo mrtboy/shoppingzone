@@ -6,7 +6,7 @@ import Tasks from '@/components/Tasks'
 import Storage from '@/components/Storage'
 import Login from '@/components/Login'
 import Register from '@/components/Register'
-
+import AboutUs from '@/components/AboutUs'
 Vue.use(Router)
 
 
@@ -37,9 +37,14 @@ export default new Router({
             component: Login
         },
         {
-            path: '/register',
-            name: 'Register',
-            component: Register
-        }
+        path: '/register',
+        name: 'Register',
+        component: Register
+      },
+      {
+        path: '/AboutUs',
+        name: 'AboutUs',
+        component: AboutUs
+      }
     ]
 });

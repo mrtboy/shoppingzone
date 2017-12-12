@@ -14,10 +14,10 @@
       <!--Links in left site-->
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="http://localhost:8080/#/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About Us</a>
+          <a class="nav-link" href="http://localhost:8080/#/aboutus">About Us</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">...</a>
@@ -59,7 +59,7 @@
 
 <script>
   export default {
-    name: 'Navigationbar',
+    name: 'Mheader',
     data () {
       return {
         message: "this is home",
