@@ -4,10 +4,10 @@
     <!-- <router-link :to="'items'">items</router-link>
      <router-link :to="'tasks'">tasks</router-link>
      <router-link :to="'storage'">storage</router-link> -->
-     
-       
-         <Navigationbar />
 
+
+         <Navigationbar />
+    <Mheader />
     <!-- <img src="./assets/logo.png"> -->
     <router-view/>
   </div>
@@ -17,12 +17,14 @@
 import CustomHeader from '@/components/CustomHeader'
 import Sidebar from '@/components/Sidebar'
 import Navigationbar from '@/components/Navigationbar'
+import Mheader from '@/components/Mheader'
 export default {
   name: 'app',
   components: {
     CustomHeader,
     Sidebar,
-    Navigationbar
+
+    Mheader,
   }
 }
 </script>
