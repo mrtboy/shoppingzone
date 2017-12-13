@@ -8,7 +8,7 @@
           <div class="card-body">
             <p class="card-text">This is the best Laptop at 80 euros! Das ist Sonderangebot!</p>
             <button class="btn btn-primary btn-sm active">Product Details</button>
-            <button class="btn btn-primary btn-sm active">Add to Cart!</button>
+            <button class="btn btn-primary btn-sm active">Contact the Seller!</button>
           </div>
         </div>
       </div>
@@ -18,7 +18,7 @@
             <div class="card-body">
               <p class="card-text">This is the best Laptop for Programmers! Das kostet 800 euro!</p>
               <button class="btn btn-primary btn-sm active">Product Details</button>
-              <button class="btn btn-primary btn-sm active">Add to Cart!</button>
+              <button class="btn btn-primary btn-sm active">Contact the Seller!</button>
             </div>
           </div>
         </div>
