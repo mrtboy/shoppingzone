@@ -8,6 +8,9 @@ import Login from '@/components/Login'
 import Register from '@/components/Register'
 import Products from '@/components/Products'
 import TestApi from '@/components/TestApi'
+import Htask from '@/components/Htask'
+import Categories from '@/components/Categories'
+
 Vue.use(Router)
 
 
@@ -51,6 +54,16 @@ export default new Router({
         path: '/testapi',
         name: 'TestApi',
         component: TestApi
+      },
+      {
+        path: '/htask',
+        name: 'Htask',
+        component: Htask
+      },
+      {
+        path: '/categories',
+        name: 'Categories',
+        component: Categories
       },
     ]
 });
