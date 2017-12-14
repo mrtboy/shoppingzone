@@ -2,9 +2,9 @@
  <div>
 
     <!-- Masthead -->
-    
-    
-    
+
+
+
     <header class="masthead text-white text-center">
       <div class="overlay"></div>
       <div class="container">
@@ -29,7 +29,7 @@
     </header>
 
 
-    
+
     <!-- <section class="features-icons bg-light text-center">
       <div class="container">
         <div class="row">
@@ -147,11 +147,19 @@
     </section> -->
 
 
+
+
+   <!--<div id="wrap">-->
+     <!--<div id="main" class="container clear-top">-->
+       <!--<p>Your content here</p>-->
+     <!--</div>-->
+   <!--</div>-->
+   <!--<footer class="footer"></footer>-->
 </div>
-    
 
 
-  
+
+
 
 
 
@@ -175,28 +183,26 @@ export default {
 
 <!-- Add 'scoped' attribute to limit CSS to this component only -->
 <style scoped>
-body {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 700; }
-
-header.masthead {
-  position: relative;
-  background-color: #343a40;
-  background: url("/static/img/map.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding-top: 8rem;
-  padding-bottom: 8rem; }
+  body {
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700; }
+  header.masthead {
+    position: relative;
+    background-color: #343a40;
+    background: url("/static/img/Googlemap.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 8rem;
+    padding-bottom: 8rem; }
   header.masthead .overlay {
     position: absolute;
     background-color: #212529;
@@ -211,51 +217,45 @@ header.masthead {
     header.masthead {
       padding-top: 12rem;
       padding-bottom: 12rem; }
-      header.masthead h1 {
-        font-size: 3rem; } }
-
-.showcase .showcase-text {
-  padding: 3rem; }
-
-.showcase .showcase-img {
-  min-height: 30rem;
-  background-size: cover; }
-
-@media (min-width: 768px) {
+    header.masthead h1 {
+      font-size: 3rem; } }
   .showcase .showcase-text {
-    padding: 7rem; } }
-
-.features-icons {
-  padding-top: 7rem;
-  padding-bottom: 7rem; }
+    padding: 3rem; }
+  .showcase .showcase-img {
+    min-height: 30rem;
+    background-size: cover; }
+  @media (min-width: 768px) {
+    .showcase .showcase-text {
+      padding: 7rem; } }
+  .features-icons {
+    padding-top: 7rem;
+    padding-bottom: 7rem; }
   .features-icons .features-icons-item {
     max-width: 20rem; }
-    .features-icons .features-icons-item .features-icons-icon {
-      height: 7rem; }
-      .features-icons .features-icons-item .features-icons-icon i {
-        font-size: 4.5rem; }
-    .features-icons .features-icons-item:hover .features-icons-icon i {
-      font-size: 5rem; }
-
-.testimonials {
-  padding-top: 7rem;
-  padding-bottom: 7rem; }
+  .features-icons .features-icons-item .features-icons-icon {
+    height: 7rem; }
+  .features-icons .features-icons-item .features-icons-icon i {
+    font-size: 4.5rem; }
+  .features-icons .features-icons-item:hover .features-icons-icon i {
+    font-size: 5rem; }
+  .testimonials {
+    padding-top: 7rem;
+    padding-bottom: 7rem; }
   .testimonials .testimonial-item {
     max-width: 18rem; }
-    .testimonials .testimonial-item img {
-      max-width: 12rem;
-      box-shadow: 0px 5px 5px 0px #adb5bd; }
-
-.call-to-action {
-  position: relative;
-  background-color: #343a40;
-  background: url("/static/img/map.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding-top: 7rem;
-  padding-bottom: 7rem; }
+  .testimonials .testimonial-item img {
+    max-width: 12rem;
+    box-shadow: 0px 5px 5px 0px #adb5bd; }
+  .call-to-action {
+    position: relative;
+    background-color: #343a40;
+    background: url("/static/img/Googlemap.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 7rem;
+    padding-bottom: 7rem; }
   .call-to-action .overlay {
     position: absolute;
     background-color: #212529;
@@ -264,9 +264,7 @@ header.masthead {
     top: 0;
     left: 0;
     opacity: 0.3; }
-
-footer.footer {
-  padding-top: 4rem;
-  padding-bottom: 4rem; }
-
+  footer.footer {
+    padding-top: 4rem;
+    padding-bottom: 4rem; }
 </style>
