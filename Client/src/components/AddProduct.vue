@@ -16,10 +16,7 @@
 
       <div class="form-group row">
         <div class="col-sm-12 col-md-6">
-          <button type="submit" class="btn btn-primary" style="width: 10rem" >Sign in</button>
-        </div>
-        <div class="col-sm-12 col-md-6">
-          <a href="#" class="card-link">need an account?</a>
+          <button type="submit" class="btn btn-primary" style="width: 10rem" @click="submitProduct()">Submit</button>
         </div>
       </div>
     </form>
@@ -33,11 +30,13 @@
     name: 'AddProduct',
     data () {
       return {
-
+        item: []
       }
     },
     methods: {
+      submitProduct: function () {
 
+      }
     }
   }
 </script>

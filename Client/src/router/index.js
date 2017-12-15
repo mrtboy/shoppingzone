@@ -10,6 +10,7 @@ import Products from '@/components/Products'
 import TestApi from '@/components/TestApi'
 import Htask from '@/components/Htask'
 import Categories from '@/components/Categories'
+import AddProduct from '@/components/Addproduct'
 
 Vue.use(Router)
 
@@ -64,6 +65,11 @@ export default new Router({
         path: '/categories',
         name: 'Categories',
         component: Categories
+      },
+      {
+        path: '/addproduct',
+        name: 'AddProduct',
+        component: AddProduct
       },
     ]
 });
