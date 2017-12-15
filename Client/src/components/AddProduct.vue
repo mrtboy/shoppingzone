@@ -40,7 +40,7 @@
 
             <div class="form-group row">
               <div class="col-sm-12 col-md-6">
-                <button type="submit" class="btn btn-primary" style="width: 10rem" >Sign up</button>
+                <button type="submit" class="btn btn-primary" style="width: 10rem" @click="SubmitProduct()" >Submit</button>
               </div>
             </div>
           </form>
