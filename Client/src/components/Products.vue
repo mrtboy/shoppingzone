@@ -1,7 +1,7 @@
 <template>
 
   <div class="container">
-    <button class="btn btn-primary" @click="addProduct()">Add Products</button>
+    <router-link class="card-link" :to="'/AddProduct'">AddProduct<span class="sr-only">(current)</span></router-link>
     <div></div>
       <div class="row">
       <div class="col-sm-3">
@@ -59,7 +59,7 @@
       },
       //this this the addProduct function which will redirect to AddProduct page
       addProduct: function () {
-
+          //Just for testing work
       }
 
 

@@ -1,25 +1,54 @@
 <template>
   <div class="container-fluid">
-    <form>
-      <div class="form-group row">
-        <label for="inputEmail3" class="col-sm-4 col-form-label">Email</label>
-        <div class="col-sm-8">
-          <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-        </div>
-      </div>
-      <div class="form-group row">
-        <label for="inputPassword3" class="col-sm-4 col-form-label">Password</label>
-        <div class="col-sm-8">
-          <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-        </div>
-      </div>
+    <div class="row justify-content-center">
+      <div class="card m-5 p-2" style="width: 30rem;">
+        <div class="card-body">
+          <h4 class="card-title">Adding New Product</h4>
+          <h6 class="card-subtitle mb-4 text-muted ">please enter your Product information Below</h6>
 
-      <div class="form-group row">
-        <div class="col-sm-12 col-md-6">
-          <button type="submit" class="btn btn-primary" style="width: 10rem" @click="submitProduct()">Submit</button>
+          <form>
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-4 col-form-label">Fisrtname</label>
+              <div class="col-sm-8">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-4 col-form-label">Lastname</label>
+              <div class="col-sm-8">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-4 col-form-label">Area Code</label>
+              <div class="col-sm-8">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-4 col-form-label">Email</label>
+              <div class="col-sm-8">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPassword3" class="col-sm-4 col-form-label">Password</label>
+              <div class="col-sm-8">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <div class="col-sm-12 col-md-6">
+                <button type="submit" class="btn btn-primary" style="width: 10rem" >Sign up</button>
+              </div>
+            </div>
+          </form>
+
         </div>
       </div>
-    </form>
+    </div>
+
 
   </div>
 
