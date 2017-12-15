@@ -82,18 +82,18 @@
 
         <h1>How it works</h1>
 
-<p>People are very busy with work and study to check the websites every minutes to
-  find the product that they need to get it at best price and nearest location.
-  This application always listening to customer request to find the product as soon as
-  the item put for sale in nearest location. For example, someone need second hand coffeemaker,
-  then she or he create the request to application to notify him or her when someone around me
-  want to sell this item with expectation price range. This application send notification to
-  customer as soon as product is available in range of area that customer can personally receive it. </p>
+        <p>People are very busy with work and study to check the websites every minutes to
+          find the product that they need to get it at best price and nearest location.
+          This application always listening to customer request to find the product as soon as
+          the item put for sale in nearest location. For example, someone need second hand coffeemaker,
+          then she or he create the request to application to notify him or her when someone around me
+          want to sell this item with expectation price range. This application send notification to
+          customer as soon as product is available in range of area that customer can personally receive it. </p>
         <h1>Some of the Advantages: </h1>
 
-     <p>Avoid travel long instant to store • Save money and time to send item with post •
-       Control product in place before pay • Help small businesses to promote their product in area •
-       Help citizen to sell the items in house that they don’t use anymore </p>
+        <p>Avoid travel long instant to store • Save money and time to send item with post •
+          Control product in place before pay • Help small businesses to promote their product in area •
+          Help citizen to sell the items in house that they don’t use anymore </p>
 
         <h1>Technologies</h1>
 
@@ -157,7 +157,7 @@
   div
   {
 
-padding: 20px;
+    padding: 20px;
     height:1000px ;
     width: 1500px;
     margin: auto;
@@ -174,7 +174,7 @@ padding: 20px;
   }
   h1{
     text-align:center ;
-    font: bold;
+    font-weight: bold;
     padding: 10px;
   }
 
@@ -197,4 +197,4 @@ padding: 20px;
   a {
     color: #42b983;
   }
-  </style>
+</style>

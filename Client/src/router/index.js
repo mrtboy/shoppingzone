@@ -7,6 +7,7 @@ import Storage from '@/components/Storage'
 import Login from '@/components/Login'
 import Register from '@/components/Register'
 import AboutUs from '@/components/AboutUs'
+import ContactUs from '@/components/ContactUs'
 Vue.use(Router)
 
 
@@ -45,6 +46,11 @@ export default new Router({
         path: '/AboutUs',
         name: 'AboutUs',
         component: AboutUs
+      },
+      {
+        path: '/ContactUs',
+        name: 'ContactUs',
+        component: ContactUs
       }
     ]
 });

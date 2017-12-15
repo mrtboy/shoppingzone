@@ -26,7 +26,7 @@
           <a class="nav-link" href="#">Products</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact Us</a>
+          <a class="nav-link" href="http://localhost:8080/#/contactus">Contact Us</a>
 
         </li>
 
