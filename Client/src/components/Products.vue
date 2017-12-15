@@ -1,6 +1,8 @@
 <template>
 
   <div class="container">
+    <button class="btn btn-primary" @click="addProduct()">Add Products</button>
+    <div></div>
       <div class="row">
       <div class="col-sm-3">
         <div class="card">
@@ -54,7 +56,12 @@
         let index=this.cart.indexOf(item);
         if(index !== -1)
           this.cart.splice(index, 1);
+      },
+      //this this the addProduct function which will redirect to AddProduct page
+      addProduct: function () {
+
       }
+
 
 
       }
