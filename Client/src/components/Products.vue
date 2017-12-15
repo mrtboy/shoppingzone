@@ -7,8 +7,8 @@
           <img class="card-img-top" src="http://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c05474585.png" alt="Card image cap">
           <div class="card-body">
             <p class="card-text">This is the best Laptop at 80 euros! Das ist Sonderangebot!</p>
-            <button class="btn btn-primary btn-sm active">Product Details</button>
-            <button class="btn btn-primary btn-sm active">Contact the Seller!</button>
+            <router-link class="card-link" :to="'/Products'">Products detail!<span class="sr-only">(current)</span></router-link>
+            <router-link class="card-link" :to="'/Products'">Contact Seller!<span class="sr-only">(current)</span></router-link>
           </div>
         </div>
       </div>
@@ -17,8 +17,8 @@
             <img class="card-img-top" src="https://www.msi.com/asset/resize/picture/us/news-s/news_1501543761597fbd5188382-png/405.jpg" alt="Card image cap">
             <div class="card-body">
               <p class="card-text">This is the best Laptop for Programmers! Das kostet 800 euro!</p>
-              <button class="btn btn-primary btn-sm active">Product Details</button>
-              <button class="btn btn-primary btn-sm active">Contact the Seller!</button>
+              <router-link class="card-link" :to="'/Products'">Products detail!<span class="sr-only">(current)</span></router-link>
+              <router-link class="card-link" :to="'/Products'">Contact Seller!<span class="sr-only">(current)</span></router-link>
             </div>
           </div>
         </div>
