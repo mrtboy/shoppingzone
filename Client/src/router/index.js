@@ -10,7 +10,7 @@ import Products from '@/components/Products'
 import TestApi from '@/components/TestApi'
 import Htask from '@/components/Htask'
 import Categories from '@/components/Categories'
-import AddProduct from '@/components/Addproduct'
+import AddProduct from '@/components/AddProduct'
 
 Vue.use(Router)
 
