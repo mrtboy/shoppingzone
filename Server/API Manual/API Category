@@ -3,8 +3,8 @@ Categoru APIs
     POST /categories
     {
         Model {
-            name: String,
-            description: String,
+            name: String, = Not Null = ture
+            description: String, = Not Null = ture
         }
         Expected Result{
             Save new category to Database
