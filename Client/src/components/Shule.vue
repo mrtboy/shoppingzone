@@ -1,29 +1,49 @@
 <template>
-  <div>
-    School for all
-    <button @click="School()">Books for everyone!</button>
-    <div v-for="task in tasks">
-      <div class="card" style="width: 20rem;">
-        <img class="card-img-top" src="http://kolsheaa.com/english/uploads/fdHfCK2pkRp5javPhb35wZgut8X2hhHefgzX9KjYAaERniPyVJMgVcuu.jpg"  alt="Card image cap">
-        <div class="card-body">
-          <p class="card-text">{{task.title}}</p>
+<div> Cars Culture
+  <button @click="Mercedees()">Click here to check the cars!</button>
+
+
+      <div id="Shoes" class="shoes" data-ride="Shoes1">
+        <ol class="carousel-indicators">
+          <li data-target="#Shoes" data-slide-to="0" class="active"></li>
+          <li data-target="#Shoes1" data-slide-to="1"></li>
+          <li data-target="#Shoes2" data-slide-to="2"></li>
+        </ol>
+        <div class="">
+          <div class="Shoes">
+            <img class="Shoes width-20px" src="https://images-eu.ssl-images-amazon.com/images/G/31/img15/Shoes/CatNav/p._V293117552_.jpg" alt="First slide">
+          </div>
+          <div class="Shoes1">
+            <img class="Shoes1 w-20" src="https://rukminim1.flixcart.com/image/1408/1408/shoe/y/6/e/wonder-13-45-asian-grey-original-imaenr72gssfxrbj.jpeg?q=90" alt="Second slide">
+          </div>
+          <div class="Shoes2">
+            <img class="Shoes2 w-20" src="https://static.pexels.com/photos/267320/pexels-photo-267320.jpeg" alt="Third slide">
+          </div>
         </div>
+        <a class="Shoes" href="https://www.6pm.com/shoess" role="Mercedees" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="Shoes1" href="#https://www.6pm.com/shoes" role="Mercedees" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
     </div>
   </div>
-
+</div>
 </template>
 
 <script>
   export default {
-    name: 'School',
+    name: 'Mercedees',
     data () {
       return {
         tasks: []
       }
     },
     methods: {
-      School: function() {
+      Mercedees: function() {
         var me=this;
         this.axios.get('http://pm102api.moronium.com:12222/tasks/')
           .then(function (response) {
@@ -62,10 +82,9 @@
   .sadam-task{
     background-color: #987654;
     color: #fff;
-    width: 250px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     text-align: center;
     vertical-align: middle;
   }
 </style>
-

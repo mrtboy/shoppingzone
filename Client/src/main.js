@@ -22,11 +22,11 @@ import authInspector from '@/plugins/authInspector'
 
 Vue.use(VueAxios, axios)
 Vue.use(Toasted, {
-    position: "bottom-center",
-    duration: 2000,
-    fullWidth: true,
-    fitToScreen: true,
-    theme: "primary"
+  position: "bottom-center",
+  duration: 2000,
+  fullWidth: true,
+  fitToScreen: true,
+  theme: "primary"
 })
 Vue.use(BootstrapVue)
 Vue.use(authInspector)
@@ -37,7 +37,7 @@ Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
-    el: '#app',
-    router,
-    render: h => h(App)
+  el: '#app',
+  router,
+  render: h => h(App)
 })
