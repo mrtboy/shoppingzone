@@ -46,7 +46,7 @@ module.exports = app => {
         const dir = path.join(__dirname, "../../models/db/sql");
         fs.readdirSync(dir).forEach(file => {
             const modelDir = path.join(dir, file);
-            console.log(modelDir);
+            // console.log(modelDir);
             const model = sequelize.import(modelDir);
             db.models[model.name] = model;
         });
