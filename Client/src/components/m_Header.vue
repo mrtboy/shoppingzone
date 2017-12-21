@@ -17,16 +17,16 @@
           <a class="nav-link" href="http://localhost:8080/#/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="http://localhost:8080/#/m_aboutus">About Us</a>
+          <a class="nav-link" href="http://localhost:8080/#/m_aboutus">About us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">...</a>
+          <a class="nav-link" href="#">....</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Products</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="http://localhost:8080/#/contactus">Contact Us</a>
+          <a class="nav-link" href="http://localhost:8080/#/contactus">Contact us</a>
 
         </li>
 

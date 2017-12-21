@@ -43,7 +43,7 @@ export default new Router({
         component: Register
       },
       {
-        path: '/m_AboutUs',
+        path: '/m_aboutus',
         name: 'm_AboutUs',
         component: m_AboutUs
       },
