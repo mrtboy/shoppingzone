@@ -17,7 +17,7 @@
           <a class="nav-link" href="http://localhost:8080/#/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="http://localhost:8080/#/aboutus">About Us</a>
+          <a class="nav-link" href="http://localhost:8080/#/m_aboutus">About Us</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">...</a>
