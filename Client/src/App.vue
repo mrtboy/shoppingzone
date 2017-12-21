@@ -7,7 +7,7 @@
 
 
          <Navigationbar />
-    <Mheader />
+    <m_Header />
     <!-- <img src="./assets/logo.png"> -->
     <router-view/>
   </div>
@@ -17,14 +17,14 @@
 import CustomHeader from '@/components/CustomHeader'
 import Sidebar from '@/components/Sidebar'
 import Navigationbar from '@/components/Navigationbar'
-import Mheader from '@/components/Mheader'
+import m_Header from '@/components/m_Header'
 export default {
   name: 'app',
   components: {
     CustomHeader,
     Sidebar,
 
-    Mheader,
+    m_Header,
   }
 }
 </script>
