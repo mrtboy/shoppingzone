@@ -29,7 +29,7 @@
     </div>
 
 
-    <!-- Text input for name-->
+      <!-- Text input for name-->
     <div class="form-group">
       <div class="col-md-12">
         <div class="col-md-2">

@@ -49,7 +49,7 @@ export default new Router({
       },
       {
         path: '/ContactUs',
-        name: 'ContactUs',
+        name: ' ContactUs',
         component: ContactUs
       }
     ]
