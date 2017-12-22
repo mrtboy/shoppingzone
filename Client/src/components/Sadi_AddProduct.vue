@@ -6,66 +6,87 @@
           <h4 class="card-title">Adding New Product</h4>
           <h6 class="card-subtitle mb-4 text-muted ">please enter your Product information Below</h6>
 
-          <form>
-            <div class="form-group row">
-              <img src="http://designsbysarahbryan.com/wp-content/uploads/2010/01/dbs_blinkie-size-200X200.jpg" class="rounded float-right" alt="...">
-              <div class="col-sm-8">
-                <button type="button" class="btn btn-primary" @click="uploadImg()">Image of the Product</button>
+          <form id="productForm" method="post" class="form-horizontal">
+           <div class="form-group">
+            <label class="col-xs-3 control-label">Product name</label>
+              <div class="col-xs-5">
+                <input type="text" class="form-control" name="name" />
               </div>
-               
-            </div>
-            <div class="form-group row">
-              <label for="name" class="col-sm-4 col-form-label">Name</label>
-              <div class="col-sm-8">
-                <input type="text" class="form-control" placeholder="ProductName">
+           </div>
+
+        <div class="form-group">
+          <label class="col-xs-3 control-label">Description</label>
+          <div class="col-xs-8">
+              <textarea name="description" class="form-control" rows="5"></textarea>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-xs-3 control-label">Price</label>
+          <div class="col-xs-3 inputGroupContainer">
+            <div class="input-group">
+                <input type="text" class="form-control" name="price" />
+                <span class="input-group-addon">$</span>
               </div>
-            </div>
-            <div class="form-group row">
-              <label for="name" class="col-sm-4 col-form-label">Category</label>
-              <div class="col-sm-8">
-                <div class="input-group-btn">
-                  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Select</button>
-                  <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                  <div role="separator" class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Separated link</a>
-                  </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-xs-3 control-label">Category</label>
+              <div class="col-xs-5 selectContainer">
+                <select class="form-control" name="size">
+                  <option value="">Choose a Category</option>
+                  <option value="s">Small (S)</option>
+                  <option value="m">Medium (M)</option>
+                  <option value="l">Large (L)</option>
+                  <option value="xl">Extra large (XL)</option>
+                </select>
+              </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-xs-3 control-label">Condition</label>
+          <div class="col-xs-5 selectContainer">
+            <select class="form-control" name="condition">
+                <option value="">Choose a Condition</option>
+                <option value="new">New</option>
+                <option value="used">Used</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="form-group">
+            <label class="col-xs-3 control-label">Availablity</label>
+              <div class="col-xs-5">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" value="" />
+                    Product Available
+                </label>
+                <div class="form-check">
+                    <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" value="">
+                      Product Not Available anymore!
+                  </label>
                 </div>
-                
               </div>
-            </div>
-            <div class="form-group row">
-              <label for="name" class="col-sm-4 col-form-label">Price</label>
-              <div class="col-sm-8">
-                <input type="text" class="form-control" placeholder="Put the Price of the Product">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="name" class="col-sm-4 col-form-label">Product Description:</label>
-              <div class="col-sm-8">
-                <textarea class="form-control" rows="5" id="Product Description" placeholder="Product Decription"></textarea>
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="inputPassword3" class="col-sm-4 col-form-label">Condition</label>
-              <div class="col-sm-8">
-                <input type="checkbox" aria-label="Checkbox for following text input">
-                <span class="input-group">
-                  <label for="condition" class="col-sm-4 col-form-label">used</label>
-                </span>
-              </div>
-            </div>
+           </div>
 
-            <div class="form-group row">
-              <div class="col-sm-12 col-md-6">
-                <button type="submit" class="btn btn-primary" style="width: 10rem" @click="SubmitProduct()" >Submit</button>
-              </div>
-            </div>
-          </form>
+        <div class="form-group">
+             <label class="col-xs-3 control-label">Address</label>
+          <div class="col-xs-8">
+              <textarea name="address" class="form-control" rows="5"></textarea>
+          </div>
+        </div>
 
+        <div class="form-group">
+          <div class="col-xs-5 col-xs-offset-3">
+              <button type="submit" class="btn btn-default" @click="submitProduct()">Submit</button>
+          </div>
+        </div>
+
+        
+
+        </form>
         </div>
       </div>
     </div>
