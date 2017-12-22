@@ -46,13 +46,16 @@
             <div class="form-group row">
               <label for="name" class="col-sm-4 col-form-label">Product Description:</label>
               <div class="col-sm-8">
-                <textarea class="form-control" rows="5" id="Product Description"></textarea>
+                <textarea class="form-control" rows="5" id="Product Description" placeholder="Product Decription"></textarea>
               </div>
             </div>
             <div class="form-group row">
-              <label for="inputPassword3" class="col-sm-4 col-form-label">Password</label>
+              <label for="inputPassword3" class="col-sm-4 col-form-label">Condition</label>
               <div class="col-sm-8">
-                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                <input type="checkbox" aria-label="Checkbox for following text input">
+                <span class="input-group">
+                  <label for="condition" class="col-sm-4 col-form-label">used</label>
+                </span>
               </div>
             </div>
 

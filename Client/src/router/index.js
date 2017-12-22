@@ -6,11 +6,11 @@ import Tasks from '@/components/Tasks'
 import Storage from '@/components/Storage'
 import Login from '@/components/Login'
 import Register from '@/components/Register'
-import Products from '@/components/Products'
+import Products from '@/components/Sadi_Products'
 import TestApi from '@/components/TestApi'
 import Htask from '@/components/Htask'
 import Categories from '@/components/Categories'
-import AddProduct from '@/components/AddProduct'
+import Sadi_AddProduct from '@/components/Sadi_AddProduct'
 
 Vue.use(Router)
 
@@ -47,9 +47,9 @@ export default new Router({
             component: Register
         },
       {
-        path: '/products',
-        name: 'Products',
-        component: Products
+        path: '/sadi_products',
+        name: 'Sadi_Products',
+        component: Sadi_Products
       },
       {
         path: '/testapi',
@@ -67,9 +67,9 @@ export default new Router({
         component: Categories
       },
       {
-        path: '/addproduct',
-        name: 'AddProduct',
-        component: AddProduct
+        path: '/sadi_addproduct',
+        name: 'Sadi_AddProduct',
+        component: Sadi_AddProduct
       },
     ]
 });

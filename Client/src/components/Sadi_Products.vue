@@ -1,7 +1,7 @@
 <template>
 
   <div class="container">
-    <router-link class="card-link" :to="'/AddProduct'">AddProduct<span class="sr-only">(current)</span></router-link>
+    <router-link class="card-link" :to="'/Sadi_AddProduct'">AddProduct<span class="sr-only">(current)</span></router-link>
     <div></div>
       <div class="row">
       <div class="col-sm-3">
