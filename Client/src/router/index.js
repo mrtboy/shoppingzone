@@ -6,40 +6,46 @@ import Tasks from '@/components/Tasks'
 import Storage from '@/components/Storage'
 import Login from '@/components/Login'
 import Register from '@/components/Register'
+import m_AddProductss from '@/components/m_AddProductss'
 
 Vue.use(Router)
 
 
 export default new Router({
-    routes: [{
-            path: '/',
-            name: 'Home',
-            component: Home
-        },
-        {
-            path: '/items',
-            name: 'Hello',
-            component: HelloWorld
-        },
-        {
-            path: '/tasks',
-            name: 'Tasks',
-            component: Tasks
-        },
-        {
-            path: '/storage',
-            name: 'Storage',
-            component: Storage
-        },
-        {
-            path: '/login',
-            name: 'Login',
-            component: Login
-        },
-        {
-            path: '/register',
-            name: 'Register',
-            component: Register
-        }
-    ]
+  routes: [{
+    path: '/',
+    name: 'Home',
+    component: Home
+  },
+    {
+      path: '/items',
+      name: 'Hello',
+      component: HelloWorld
+    },
+    {
+      path: '/tasks',
+      name: 'Tasks',
+      component: Tasks
+    },
+    {
+      path: '/storage',
+      name: 'Storage',
+      component: Storage
+    },
+    {
+      path: '/login',
+      name: 'Login',
+      component: Login
+    },
+    {
+      path: '/register',
+      name: 'Register',
+      component: Register
+    },
+    {
+      path: '/m_addproductss',
+      name: 'm_AddProductss',
+      component: m_AddProductss
+    }
+  ]
 });
