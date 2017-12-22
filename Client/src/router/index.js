@@ -11,6 +11,7 @@ import TestApi from '@/components/TestApi'
 import Htask from '@/components/Htask'
 import Categories from '@/components/Categories'
 import Sadi_AddProduct from '@/components/Sadi_AddProduct'
+import Sadi_TestingEditDelProduct from '@/components/Sadi_TestingEditDelProduct'
 
 Vue.use(Router)
 
@@ -70,6 +71,11 @@ export default new Router({
         path: '/sadi_addproduct',
         name: 'Sadi_AddProduct',
         component: Sadi_AddProduct
+      },
+      {
+        path: '/sadi_testingeditdelproduct',
+        name: 'Sadi_TestingEditDelProduct',
+        component: Sadi_TestingEditDelProduct
       },
     ]
 });
