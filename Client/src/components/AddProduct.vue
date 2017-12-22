@@ -8,27 +8,45 @@
 
           <form>
             <div class="form-group row">
-              <label for="inputEmail3" class="col-sm-4 col-form-label">Fisrtname</label>
+              <img src="http://designsbysarahbryan.com/wp-content/uploads/2010/01/dbs_blinkie-size-200X200.jpg" class="rounded float-right" alt="...">
               <div class="col-sm-8">
-                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                <button type="button" class="btn btn-primary" @click="uploadImg()">Image of the Product</button>
+              </div>
+               
+            </div>
+            <div class="form-group row">
+              <label for="name" class="col-sm-4 col-form-label">Name</label>
+              <div class="col-sm-8">
+                <input type="text" class="form-control" placeholder="ProductName">
               </div>
             </div>
             <div class="form-group row">
-              <label for="inputEmail3" class="col-sm-4 col-form-label">Lastname</label>
+              <label for="name" class="col-sm-4 col-form-label">Category</label>
               <div class="col-sm-8">
-                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                <div class="input-group-btn">
+                  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Select</button>
+                  <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <div role="separator" class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Separated link</a>
+                  </div>
+                </div>
+                
               </div>
             </div>
             <div class="form-group row">
-              <label for="inputEmail3" class="col-sm-4 col-form-label">Area Code</label>
+              <label for="name" class="col-sm-4 col-form-label">Price</label>
               <div class="col-sm-8">
-                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                <input type="text" class="form-control" placeholder="Put the Price of the Product">
               </div>
             </div>
             <div class="form-group row">
-              <label for="inputEmail3" class="col-sm-4 col-form-label">Email</label>
+              <label for="name" class="col-sm-4 col-form-label">Product Description:</label>
               <div class="col-sm-8">
-                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                <textarea class="form-control" rows="5" id="Product Description"></textarea>
               </div>
             </div>
             <div class="form-group row">
@@ -64,6 +82,9 @@
     },
     methods: {
       submitProduct: function () {
+
+      },
+      uploadImg: function(){
 
       }
     }
