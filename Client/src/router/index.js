@@ -8,6 +8,8 @@ import Login from '@/components/Login'
 import Register from '@/components/Register'
 import m_AboutUs from '@/components/m_AboutUs'
 import ContactUs from '@/components/ContactUs'
+import m_AddProductss from '@/components/m_AddProductss'
+
 Vue.use(Router)
 
 
@@ -51,6 +53,12 @@ export default new Router({
         path: '/ContactUs',
         name: ' ContactUs',
         component: ContactUs
+      },
+
+      {
+        path: '/m_addproductss',
+        name: 'm_AddProductss',
+        component: m_AddProductss
       }
     ]
 });
