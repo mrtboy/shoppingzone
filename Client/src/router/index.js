@@ -12,11 +12,13 @@ import Htask from '@/components/Htask'
 import Categories from '@/components/Categories'
 import Sadi_AddProduct from '@/components/Sadi_AddProduct'
 import Sadi_TestingEditDelProduct from '@/components/Sadi_TestingEditDelProduct'
+import m_AddProductss from '@/components/m_AddProductss'
 
 Vue.use(Router)
 
 
 export default new Router({
+<<<<<<< HEAD
     routes: [{
             path: '/',
             name: 'Home',
@@ -78,4 +80,42 @@ export default new Router({
         component: Sadi_TestingEditDelProduct
       },
     ]
+=======
+  routes: [{
+    path: '/',
+    name: 'Home',
+    component: Home
+  },
+    {
+      path: '/items',
+      name: 'Hello',
+      component: HelloWorld
+    },
+    {
+      path: '/tasks',
+      name: 'Tasks',
+      component: Tasks
+    },
+    {
+      path: '/storage',
+      name: 'Storage',
+      component: Storage
+    },
+    {
+      path: '/login',
+      name: 'Login',
+      component: Login
+    },
+    {
+      path: '/register',
+      name: 'Register',
+      component: Register
+    },
+    {
+      path: '/m_addproductss',
+      name: 'm_AddProductss',
+      component: m_AddProductss
+    }
+  ]
+>>>>>>> upstream/master
 });
