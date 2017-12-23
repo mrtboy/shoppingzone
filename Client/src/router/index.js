@@ -18,7 +18,6 @@ Vue.use(Router)
 
 
 export default new Router({
-<<<<<<< HEAD
     routes: [{
             path: '/',
             name: 'Home',
@@ -80,7 +79,6 @@ export default new Router({
         component: Sadi_TestingEditDelProduct
       },
     ]
-=======
   routes: [{
     path: '/',
     name: 'Home',
@@ -117,5 +115,4 @@ export default new Router({
       component: m_AddProductss
     }
   ]
->>>>>>> upstream/master
 });
