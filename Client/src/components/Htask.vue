@@ -33,7 +33,7 @@
           })
           .catch(function (error) {
             console.log(error);
-          });s
+          });
       }
     }
   }
