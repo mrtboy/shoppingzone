@@ -1,65 +1,146 @@
 <template>
-<div> Cars Culture
-  <button @click="Mercedees()">Click here to check the cars!</button>
+  <div id="app">
+    <b-container>
+      <b-jumbotron header="Bootstrap Vue"
+                   lead="Bootstrap 4 Components for Vue.js 2">
+        <p>For more information visit our website</p>
+        <b-btn variant="primary" href="https://bootstrap-vue.js.org/">More Info</b-btn>
+      </b-jumbotron>
+
+      <b-form-group horizontal
+                    :label-cols="4"
+                    description="Let us know your name."
+                    label="Enter your name">
+
+        <b-form-input v-model.trim="name"></b-form-input>
+      </b-form-group>
+
+      <b-alert variant="success" :show="showAlert">
+        Hello {{ name }}
+      </b-alert>
 
 
-      <div id="Shoes" class="shoes" data-ride="Shoes1">
-        <ol class="carousel-indicators">
-          <li data-target="#Shoes" data-slide-to="0" class="active"></li>
-          <li data-target="#Shoes1" data-slide-to="1"></li>
-          <li data-target="#Shoes2" data-slide-to="2"></li>
-        </ol>
-        <div class="">
-          <div class="Shoes">
-            <img class="Shoes width-20px" src="https://images-eu.ssl-images-amazon.com/images/G/31/img15/Shoes/CatNav/p._V293117552_.jpg" alt="First slide">
-          </div>
-          <div class="Shoes1">
-            <img class="Shoes1 w-20" src="https://rukminim1.flixcart.com/image/1408/1408/shoe/y/6/e/wonder-13-45-asian-grey-original-imaenr72gssfxrbj.jpeg?q=90" alt="Second slide">
-          </div>
-          <div class="Shoes2">
-            <img class="Shoes2 w-20" src="https://static.pexels.com/photos/267320/pexels-photo-267320.jpeg" alt="Third slide">
-          </div>
+      </b-container>
+        <div style="width:100%"><div><div><div style=";border-style:none"><div class="footer-top-socials">
+         <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+            <div class="col-md-6 footer-logo pull-left">
+              <img alt="Sadam" class="sadam-logo" id="footer-logo" src="https://en-support.files.wordpress.com/2013/07/wordpress-follow-social-buttons.png"></div>
+            </div>
         </div>
-        <a class="Shoes" href="https://www.6pm.com/shoess" role="Mercedees" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="Shoes1" href="#https://www.6pm.com/shoes" role="Mercedees" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
       </div>
     </div>
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-12 footer-links">
+              <div class="col-md-3 col-sm-6">
+                <h3>
+                  About</h3>
+                <ul class="list">
+                  <li>
+                    <a href="#">About Us</a></li>
+                  <li>
+                    <a href="#" target="_blank">Press Office</a></li>
+                  <li>
+                    <a href="#">LaLaLand</a></li>
+                  <li>
+                    <a href="#">Code of Ethics</a></li>
+                  <li>
+                    <a href="#">Terms and Conditions</a></li>
+                  <li>
+                    <a href="#">Community Guidelines</a></li>
+                  <li>
+                    <a href="#" target="_blank">HR Quality</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <h3>
+                  Connect</h3>
+                <ul class="list">
+                  <li>
+                    <a href="#">Contact Us</a></li>
+                  <li>
+                    <a href="#">Apps</a></li>
+                  <li>
+                    <a href="#">Social</a></li>
+                  <li>
+                    <a href="#" target="_blank">Channel Finder</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <h3>
+                  Our Channels</h3>
+                <ul class="list">
+                  <li>
+                    <a href="#" target="_blank">Pakistani Sadam</a></li>
+                  <li>
+                    <a href="#" target="_blank">El Dorado</a></li>
+                  <li>
+                    <a href="#" target="_blank">Du bist Arabisch?</a></li>
+                  <li>
+                    <a href="#" target="_blank">Ich bin Sadam!</a></li>
+                  <li>
+                    <a href="#" target="_blank">Mangrio ich mein nach name!</a></li>
+                  <li>
+                    <a href="#" target="_blank">Ich liebe Schila!</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <h3>
+                  Our Network</h3>
+                <ul class="list">
+                  <li>
+                    <a href="#" target="_blank">Jetty</a></li>
+                  <li>
+                    <a href="#" target="_blank">El Conquistador for Studies</a></li>
+                  <li>
+                    <a href="#" target="_blank">El Moor Media Institute</a></li>
+                  <li>
+                    <a href="#" target="_blank">El Husain Centre for Public Liberties &amp; Autocracy Rights</a></li>
+                  <li>
+                    <a href="#" target="_blank">Longlive Forum</a></li>
+                  <li>
+                    <a href="#" target="_blank">Sadam Film Festival</a></li>
+                  <li>
+                    <a href="#" target="_blank">El Sadam bin Almany Learning</a></li>
+                  <li>
+                    <a href="#" target="_blank">Sadam Hotel Partners</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12 footer-copyright">
+              <p>
+                © 2017 Sadam Network</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>
+        &nbsp;</p>
+    </div></div><!--PageLoadedSucessfully--></div></div>
   </div>
-</div>
 </template>
 
 <script>
   export default {
-    name: 'Mercedees',
+    name: 'Schule',
     data () {
       return {
-        tasks: []
+        name: ''
       }
     },
     methods: {
-      Mercedees: function() {
-        var me=this;
-        this.axios.get('http://pm102api.moronium.com:12222/tasks/')
-          .then(function (response) {
-            //  console.log(response.data.tasks[0].title)
-            me.tasks=response.data.tasks;
-
-          })
-          .catch(function (error) {
-            console.log(error);
-          });s
+      showAlert() {
+        return this.name.length > 4 ? true : false;
       }
     }
   }
+
 </script>
 
-<!-- Add 'scoped' attribute to limit CSS to this component only -->
+
 <style scoped>
   h1,
   h2 {
@@ -79,12 +160,12 @@
   a {
     color: #42b983;
   }
-  .sadam-task{
-    background-color: #987654;
-    color: #fff;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    vertical-align: middle;
+
+  .footer {
+    position: relative;
+    bottom: -60px;
+    margin-top: -60px !important;
   }
+
+
 </style>
