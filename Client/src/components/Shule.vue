@@ -34,7 +34,7 @@
       <div class="footer">
         <div class="container">
           <div class="row">
-            <div class="col-md-8 col-sm-12 footer-links">
+           
               <div class="col-md-3 col-sm-6">
                 <h3>
                   About</h3>
@@ -109,7 +109,7 @@
                     <a href="#" target="_blank">Sadam Hotel Partners</a></li>
                 </ul>
               </div>
-            </div>
+            
             <div class="col-md-4 col-sm-12 col-xs-12 footer-copyright">
               <p>
                 © 2017 Sadam Network</p>
