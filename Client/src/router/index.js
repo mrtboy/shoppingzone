@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import AboutUs from '@/components/AboutUs'
 import Home from '@/components/Home'
 import Tasks from '@/components/Tasks'
 import Storage from '@/components/Storage'
@@ -18,9 +18,9 @@ export default new Router({
     component: Home
   },
     {
-      path: '/items',
-      name: 'Hello',
-      component: HelloWorld
+      path: '/about',
+      name: 'AboutUs',
+      component: AboutUs
     },
     {
       path: '/tasks',
