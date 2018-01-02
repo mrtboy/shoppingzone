@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import AboutUs from '@/components/AboutUs'
 import Home from '@/components/Home'
 import Tasks from '@/components/Tasks'
 import Storage from '@/components/Storage'
@@ -18,6 +18,7 @@ Vue.use(Router)
 
 
 export default new Router({
+
     routes: [{
             path: '/',
             name: 'Home',
@@ -83,6 +84,10 @@ export default new Router({
         name: 'm_AddProductss',
         component: m_AddProductss
       },
+     {
+      path: '/about',
+      name: 'AboutUs',
+      component: AboutUs
+    },
     ]
-
 });

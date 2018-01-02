@@ -7,8 +7,12 @@ import BootstrapVue from 'bootstrap-vue'
 import Toasted from 'vue-toasted'
 
 
+import 'popper.js/dist/popper.js'
+import 'jquery/dist/jquery.js'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import 'bootstrap-vue/dist/bootstrap-vue.js'
+import 'bootstrap/dist/js/bootstrap.js'
 // import './assets/themes/bootstrap.min.css'
 // import './assets/js/google-code-prettify/prettify.css'
 // import './assets/css/bootstrap-responsive.min.css'
