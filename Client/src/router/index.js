@@ -25,11 +25,6 @@ export default new Router({
             component: Home
         },
         {
-            path: '/items',
-            name: 'Hello',
-            component: HelloWorld
-        },
-        {
             path: '/tasks',
             name: 'Tasks',
             component: Tasks
