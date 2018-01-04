@@ -1,16 +1,16 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import HelloWorld from '@/components/experiment/HelloWorld'
 import Home from '@/components/Home'
 import Tasks from '@/components/Tasks'
 import Storage from '@/components/Storage'
 import Login from '@/components/Login'
 import Register from '@/components/Register'
 import Product from '@/components/Product'
-import Apitest from '@/components/Apitest'
-import Htask from '@/components/Htask'
-import Categories from '@/components/Categories'
-import Shule from '@/components/Shule'
+import Apitest from '@/components/experiment/Apitest'
+import Htask from '@/components/experiment/Htask'
+import Categories from '@/components/experiment/Categories'
+import Shule from '@/components/experiment/Shule'
 
 Vue.use(Router)
 
