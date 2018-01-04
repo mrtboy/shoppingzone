@@ -10,7 +10,7 @@ import Product from '@/components/Product'
 import Apitest from '@/components/experiment/Apitest'
 import Htask from '@/components/experiment/Htask'
 import Categories from '@/components/experiment/Categories'
-import Shule from '@/components/experiment/Shule'
+import Shule from '@/components/experiment/git Shule'
 
 Vue.use(Router)
 
