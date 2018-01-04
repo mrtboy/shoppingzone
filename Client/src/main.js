@@ -7,8 +7,12 @@ import BootstrapVue from 'bootstrap-vue'
 import Toasted from 'vue-toasted'
 
 
+import 'popper.js/dist/popper.js'
+import 'jquery/dist/jquery.js'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import 'bootstrap-vue/dist/bootstrap-vue.js'
+import 'bootstrap/dist/js/bootstrap.js'
 // import './assets/themes/bootstrap.min.css'
 // import './assets/js/google-code-prettify/prettify.css'
 // import './assets/css/bootstrap-responsive.min.css'
@@ -22,11 +26,11 @@ import authInspector from '@/plugins/authInspector'
 
 Vue.use(VueAxios, axios)
 Vue.use(Toasted, {
-  position: "bottom-center",
-  duration: 2000,
-  fullWidth: true,
-  fitToScreen: true,
-  theme: "primary"
+    position: "bottom-center",
+    duration: 2000,
+    fullWidth: true,
+    fitToScreen: true,
+    theme: "primary"
 })
 Vue.use(BootstrapVue)
 Vue.use(authInspector)
@@ -37,7 +41,7 @@ Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
-  router,
-  render: h => h(App)
+    el: '#app',
+    router,
+    render: h => h(App)
 })
