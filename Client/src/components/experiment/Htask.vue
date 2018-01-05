@@ -1,7 +1,7 @@
 <template>
   <div>
   hello htask
-    <button @click="hitler()">Hitler Calls everything!</button>
+    <button @click="hero()">relita Calls everything!</button>
     <div v-for="task in tasks">
       <div class="card" style="width: 20rem;">
         <img class="card-img-top" src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX1995344.jpg"  alt="Card image cap">
@@ -23,7 +23,7 @@
       }
     },
     methods: {
-      hitler: function() {
+      hero: function() {
         var me=this;
         this.axios.get('http://pm102api.moronium.com:12222/tasks/')
           .then(function (response) {

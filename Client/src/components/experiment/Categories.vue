@@ -1,7 +1,7 @@
 <template>
   <div>
     hello htask
-    <button @click="hitler()">Hitler Calls everything!</button>
+    <button @click="sadboy()">Sadam Calls everything!</button>
     <div v-for="task in tasks">
       <div class="card" style="width: 20rem;">
         <img class="card-img-top" src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX1995344.jpg"  alt="Card image cap">
@@ -23,7 +23,7 @@
       }
     },
     methods: {
-      hitler: function() {
+      sadboy: function() {
         var me=this;
         this.axios.defaults.headers.common['Authorization'] = "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MX0.bH7kYsUgMtncuSAPE00rZfAzJzz4YPBTgjBGDGcu488";
         this.axios.get('http://pm102api.moronium.com:12222/categories/')

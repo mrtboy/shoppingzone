@@ -1,3 +1,4 @@
+<template>
 <div id="app" class="container" style="padding-top: 2em;">
   <input v-model="searchText">
 
@@ -15,6 +16,9 @@
     </tr>
   </table>
 </div>
+  
+</template>
+
 <script>
 var vm = new Vue({
 el: '#app',
@@ -42,4 +46,4 @@ vm.posts = data;
 });
 }
 });
-</script>s
+</script>
