@@ -7,6 +7,7 @@ import Storage from '@/components/Storage'
 import Login from '@/components/Login'
 import Register from '@/components/Register'
 import m_AddProductss from '@/components/m_AddProductss'
+import m_AboutUs from '@/components/m_AboutUs'
 
 Vue.use(Router)
 
@@ -46,6 +47,11 @@ export default new Router({
       path: '/m_addproductss',
       name: 'm_AddProductss',
       component: m_AddProductss
+    },
+    {
+      path: '/m_aboutus',
+      name: 'm_AboutUs',
+      component: m_AboutUs
     }
   ]
 });
