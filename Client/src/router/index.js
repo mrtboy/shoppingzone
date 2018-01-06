@@ -15,6 +15,10 @@ import Sadi_TestingEditDelProduct from '@/components/Sadi_TestingEditDelProduct'
 import m_AddProductss from '@/components/m_AddProductss'
 import m_AboutUs from '@/components/m_AboutUs'
 import m_ContactUs from '@/components/m_ContactUs'
+import EditProduct from '@/components/Product/Edit'
+import IndexProduct from '@/components/Product/Index'
+import Products from '@/components/Products'
+
 
 Vue.use(Router)
 
@@ -120,7 +124,49 @@ export default new Router({
       path: '/m_contactUs',
       name: ' m_ContactUs',
       component: m_ContactUs
+    },
+    {
+      path: '/manage/products/edit/:id',
+      name: 'EditProduct',
+      component: EditProduct,
+      meta: {
+          requiresAuth: true
+      }
+  },
+  {
+      path: '/productdetail/:id',
+      name: 'ProductDetail',
+      component: ProductDetail
+  },
+  {
+      path: '/manage/products/index',
+      name: 'IndexProduct',
+      component: IndexProduct,
+      meta: {
+          requiresAuth: true
+      }
+  },
+  {
+    path: '/manage/products/edit/:id',
+    name: 'EditProduct',
+    component: EditProduct,
+    meta: {
+        requiresAuth: true
     }
+},
+{
+    path: '/productdetail/:id',
+    name: 'ProductDetail',
+    component: ProductDetail
+},
+{
+    path: '/manage/products/index',
+    name: 'IndexProduct',
+    component: IndexProduct,
+    meta: {
+        requiresAuth: true
+    }
+},
 
   ]
 });
