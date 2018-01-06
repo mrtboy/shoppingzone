@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="/jquery/jquery.min.js"></script>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <!-- TODO: Change to vue.min.js in production-->
+    <script src="/vue/vue.js"></script>
+    <!-- Added leaflet js -->
+    <link rel="stylesheet" href="/leaflet/leaflet.css">
+    <script src="/leaflet/leaflet.js"></script>
+  </head>
+  <body>
+    <!--TODO: Testing leaflet map as is it running -->
+    <div id="mapid" style="height: 300px"></div>
+  <!-- TODO: this is a test app to make sure vue is running -->
+    <div id="app">
+        {{ message }}
+      </div>
+
+  </body>
+
+  <script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+        message: 'Hello Vue!'
+        }
+    })
+  // Testing the map
+    var map = L.map('mapid');
+
+    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+        '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+        'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+        id: 'mapbox.streets',
+        accessToken: 'pk.eyJ1Ijoic2FkaTAwNyIsImEiOiJjajlob2ZhMGszZzBzMzN0NGlydnBzdXIwIn0.DSFD9NhQQhT1KelMJYA8ag'
+    }).addTo(map);
+
+    // placeholders for the L.marker and L.circle representing user's current position and accuracy
+    var current_position, current_accuracy;
+
+    function onLocationFound(e) {
+        // if position defined, then remove the existing position marker and accuracy circle from the map
+        if (current_position) {
+            map.removeLayer(current_position);
+            map.removeLayer(current_accuracy);
+        }
+
+        var radius = e.accuracy / 2;
+
+        current_position = L.marker(e.latlng).addTo(map)
+            .bindPopup("You are within " + radius + " meters from this point").openPopup();
+
+        current_accuracy = L.circle(e.latlng, radius).addTo(map);
+    }
+
+    function onLocationError(e) {
+        alert(e.message);
+    }
+
+    map.on('locationfound', onLocationFound);
+    map.on('locationerror', onLocationError);
+
+    // wrap map.locate in a function
+    function locate() {
+        map.locate({setView: true, maxZoom: 16});
+    }
+
+    // call locate every 3 seconds... forever
+    setInterval(locate, 3000);
+
+
+  </script>
+  </html>
