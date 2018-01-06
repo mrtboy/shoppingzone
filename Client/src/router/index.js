@@ -15,6 +15,7 @@ import Sadi_TestingEditDelProduct from '@/components/Sadi_TestingEditDelProduct'
 import m_AddProductss from '@/components/m_AddProductss'
 import m_AboutUs from '@/components/m_AboutUs'
 import m_ContactUs from '@/components/m_ContactUs'
+import AddProduct from '@/components/Product/Add'
 import EditProduct from '@/components/Product/Edit'
 import IndexProduct from '@/components/Product/Index'
 import Products from '@/components/Products'
@@ -166,6 +167,14 @@ export default new Router({
     meta: {
         requiresAuth: true
     }
+},
+{
+  path: '/manage/products/add',
+  name: 'AddProduct',
+  component: AddProduct,
+  meta: {
+      requiresAuth: true
+  }
 },
 
   ]
