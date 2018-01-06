@@ -33,7 +33,9 @@
     "passport": "^0.4.0",
     "passport-jwt": "^3.0.1",
     "sequelize": "^4.22.8",
-    "sqlite": "^2.8.0"
+    "sqlite": "^2.8.0",
+    "@types/uuid": "^3.4.3",
+    "@types/websocket": "0.0.35"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
