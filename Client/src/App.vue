@@ -10,6 +10,7 @@
 
     <!-- <img src="./assets/logo.png"> -->
     <router-view/>
+    <FooterComponent/>
   </div>
 </template>
 
@@ -17,12 +18,14 @@
 import CustomHeader from '@/components/CustomHeader'
 import Sidebar from '@/components/Sidebar'
 import Navigationbar from '@/components/Navigationbar'
+import FooterComponent from '@/components/FooterComponent'
 export default {
   name: 'app',
   components: {
     CustomHeader,
     Sidebar,
-    Navigationbar
+    Navigationbar,
+    FooterComponent
   }
 }
 </script>
