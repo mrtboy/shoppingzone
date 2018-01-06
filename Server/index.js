@@ -15,4 +15,10 @@ consign()
     .then("libs/middlewares.js")
     .then("controllers")
     .then("libs/boot.js")
+    
+
+.then("controllers")    
+
+.then("lib/boot.js")
+    .then("websocket")
     .into(app);
