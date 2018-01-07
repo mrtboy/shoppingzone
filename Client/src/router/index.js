@@ -13,6 +13,8 @@ import Htask from '@/components/experiment/Htask'
 import Categories from '@/components/experiment/Categories'
 import Shule from '@/components/experiment/Shule'
 import m_AddProductss from '@/components/m_AddProductss'
+import m_AboutUs from '@/components/m_AboutUs'
+import m_ContactUs from '@/components/m_ContactUs'
 
 
 Vue.use(Router)
@@ -84,5 +86,16 @@ export default new Router({
       name: 'm_AddProductss',
       component: m_AddProductss
     },
+    {
+      path: '/m_aboutus',
+      name: 'm_AboutUs',
+      component: m_AboutUs
+    },
+    {
+      path: '/m_contactUs',
+      name: ' m_ContactUs',
+      component: m_ContactUs
+    }
+
   ]
 });
