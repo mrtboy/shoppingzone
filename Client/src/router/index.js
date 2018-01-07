@@ -93,26 +93,26 @@ export default new Router({
       name: 'AboutUs',
       component: AboutUs
     },
-    {
-      path: '/tasks',
-      name: 'Tasks',
-      component: Tasks
-    },
-    {
-      path: '/storage',
-      name: 'Storage',
-      component: Storage
-    },
-    {
-      path: '/login',
-      name: 'Login',
-      component: Login
-    },
-    {
-      path: '/register',
-      name: 'Register',
-      component: Register
-    },
+    // {
+    //   path: '/tasks',
+    //   name: 'Tasks',
+    //   component: Tasks
+    // },
+    // {
+    //   path: '/storage',
+    //   name: 'Storage',
+    //   component: Storage
+    // },
+    // {
+    //   path: '/login',
+    //   name: 'Login',
+    //   component: Login
+    // },
+    // {
+    //   path: '/register',
+    //   name: 'Register',
+    //   component: Register
+    // },
     // {
     //   path: '/product',
     //   name: 'Product',
