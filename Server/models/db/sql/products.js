@@ -14,14 +14,14 @@ module.exports = (sequelize, DataTypes) => {
         },
         price: {
             type: DataTypes.DOUBLE,
-            allowNull:  true,
+            allowNull: true,
             validate: {
                 notEmpty: false
             }
         },
         condition: {
-            type: DataTypes.STRING,
-            allowNull: false,
+            type: DataTypes.BOOLEAN,
+            allowNull: true,
             validate: {
                 notEmpty: true
             }
@@ -31,24 +31,47 @@ module.exports = (sequelize, DataTypes) => {
             allowNull: true,
             defaultValue: ""
         },
-        categoryId: {
-            type: DataTypes.INTEGER,
-            allowNull: true,
-            defaultValue: ""
-        },
         available: {
             type: DataTypes.BOOLEAN,
             allowNull: false,
             defaultValue: true
-        }
-    }, {
-        classMethods: {
-            associate: (models) => {
-                available: true;
-                Products.belongsTo(models.Users);
-                Products.belongsTo(models.Categories, { foreignKey: 'categoryId', targetKey: 'id'});
-            }
+        },
+        nov: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            defaultValue: 0
         }
     });
+
+
+    Products.associate = (models) => {
+        //available: true;
+        Products.hasMany(models.Images)
+        Products.belongsTo(models.Profiles)
+        Products.belongsTo(models.Categories)
+    };
+
+
+    Products.prototype.isInRadius = function() {
+
+        this.getProfile()
+            .then(profile => {
+                console.log(profile.lat);
+            })
+
+        // var R = 6371e3; // metres
+        // var φ1 = app.repositories.sql.ProductRepository.toRadian(points.first.lat);
+        // var φ2 = app.repositories.sql.ProductRepository.toRadian(points.second.lat);
+        // var Δφ = app.repositories.sql.ProductRepository.toRadian(points.second.lat - points.first.lat);
+        // var Δλ = app.repositories.sql.ProductRepository.toRadian(points.second.lng - points.first.lng);
+
+        // var a = Math.sin(Δφ / 2) * Math.sin(Δφ / 2) +
+        //     Math.cos(φ1) * Math.cos(φ2) *
+        //     Math.sin(Δλ / 2) * Math.sin(Δλ / 2);
+        // var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+
+        // var d = R * c;
+        //console.log(d / 1000);
+    };
     return Products;
 };
