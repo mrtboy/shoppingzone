@@ -7,12 +7,13 @@ module.exports = (sequelize, DataType) => {
             primaryKey: true,
             autoIncrement: true
         },
-        name: {
+        firstname: {
             type: DataType.STRING,
-            allowNull: false,
-            validate: {
-                notEmpty: true
-            }
+            allowNull: true
+        },
+        lastname: {
+            type: DataType.STRING,
+            allowNull: true,
         },
         password: {
             type: DataType.STRING,
@@ -29,10 +30,42 @@ module.exports = (sequelize, DataType) => {
                 notEmpty: true
             }
         },
-        role: {
-            type: DataType.STRING,            
-            allowNull: false,            
+        street: {
+            type: DataType.STRING,
+            allowNull: true
         },
+        houseno: {
+            type: DataType.STRING,
+            allowNull: true,
+        },
+        state: {
+            type: DataType.STRING,
+            allowNull: true,
+        },
+        city: {
+            type: DataType.STRING,
+            allowNull: true,
+        },
+        postalcode: {
+            type: DataType.STRING,
+            allowNull: true,
+        },
+        phone: {
+            type: DataType.STRING,
+            allowNull: true,
+        },
+        role: {
+            type: DataType.STRING,
+            allowNull: false,
+        },
+        lat: {
+            type: DataType.STRING,
+            allowNull: true,
+        },
+        long: {
+            type: DataType.STRING,
+            allowNull: true,
+        }
     }, {
         hooks: {
             beforeCreate: profile => {
@@ -42,7 +75,7 @@ module.exports = (sequelize, DataType) => {
         }
     });
     Profiles.associate = (models) => {
-        Profiles.hasMany(models.Tasks);
+        Profiles.hasMany(models.Products);
     };
     Profiles.isPassword = (encodedPassword, password) => {
         return bcrypt.compareSync(password, encodedPassword);
