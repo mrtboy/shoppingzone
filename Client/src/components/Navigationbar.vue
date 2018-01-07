@@ -10,8 +10,14 @@
       <li class="nav-item active">
         <router-link class="nav-link" :to="'/'">Home <span class="sr-only">(current)</span></router-link>
       </li>
+      <li class="nav-item active">
+        <router-link class="nav-link" :to="'/Categories'">Categories <span class="sr-only">(current)</span></router-link>
+      </li>
+      <li class="nav-item active">
+        <router-link class="nav-link" :to="'/Sadi_Products'">Products <span class="sr-only">(current)</span></router-link>
+      </li>
       <li class="nav-item">
-        <router-link class="nav-link" :to="'/product'">Product</router-link>
+        <a class="nav-link" href="#">Link</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

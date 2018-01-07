@@ -7,31 +7,88 @@ import Tasks from '@/components/Tasks'
 import Storage from '@/components/Storage'
 import Login from '@/components/Login'
 import Register from '@/components/Register'
-import Product from '@/components/Product'
-import Apitest from '@/components/experiment/Apitest'
-import Htask from '@/components/experiment/Htask'
-import Categories from '@/components/experiment/Categories'
-import Shule from '@/components/experiment/Shule'
+import Sadi_Products from '@/components/Sadi_Products'
+import TestApi from '@/components/TestApi'
+import Htask from '@/components/Htask'
+import Categories from '@/components/Categories'
+import Sadi_AddProduct from '@/components/Sadi_AddProduct'
+import Sadi_TestingEditDelProduct from '@/components/Sadi_TestingEditDelProduct'
 import m_AddProductss from '@/components/m_AddProductss'
 import m_AboutUs from '@/components/m_AboutUs'
 import m_ContactUs from '@/components/m_ContactUs'
+import AddProduct from '@/components/Product/Add'
+import EditProduct from '@/components/Product/Edit'
+import IndexProduct from '@/components/Product/Index'
+import Products from '@/components/Products'
+
 
 
 Vue.use(Router)
 
 
 export default new Router({
-  routes: [{
-    path: '/',
-    name: 'Home',
-    component: Home
-  },
-    {
-      path: '/items',
-      name: 'Hello',
-      component: HelloWorld
-    },
-    {
+
+    routes: [{
+            path: '/',
+            name: 'Home',
+            component: Home
+        },
+        {
+            path: '/tasks',
+            name: 'Tasks',
+            component: Tasks
+        },
+        {
+            path: '/storage',
+            name: 'Storage',
+            component: Storage
+        },
+        {
+            path: '/login',
+            name: 'Login',
+            component: Login
+        },
+        {
+            path: '/register',
+            name: 'Register',
+            component: Register
+        },
+      {
+        path: '/sadi_products',
+        name: 'Sadi_Products',
+        component: Sadi_Products
+      },
+      {
+        path: '/testapi',
+        name: 'TestApi',
+        component: TestApi
+      },
+      {
+        path: '/htask',
+        name: 'Htask',
+        component: Htask
+      },
+      {
+        path: '/categories',
+        name: 'Categories',
+        component: Categories
+      },
+      {
+        path: '/sadi_addproduct',
+        name: 'Sadi_AddProduct',
+        component: Sadi_AddProduct
+      },
+      {
+        path: '/sadi_testingeditdelproduct',
+        name: 'Sadi_TestingEditDelProduct',
+        component: Sadi_TestingEditDelProduct
+      },
+      {
+        path: '/m_addproductss',
+        name: 'm_AddProductss',
+        component: m_AddProductss
+      },
+     {
       path: '/about',
       name: 'AboutUs',
       component: AboutUs
@@ -95,7 +152,57 @@ export default new Router({
       path: '/m_contactUs',
       name: ' m_ContactUs',
       component: m_ContactUs
+    },
+    {
+      path: '/manage/products/edit/:id',
+      name: 'EditProduct',
+      component: EditProduct,
+      meta: {
+          requiresAuth: true
+      }
+  },
+  {
+      path: '/productdetail/:id',
+      name: 'ProductDetail',
+      component: ProductDetail
+  },
+  {
+      path: '/manage/products/index',
+      name: 'IndexProduct',
+      component: IndexProduct,
+      meta: {
+          requiresAuth: true
+      }
+  },
+  {
+    path: '/manage/products/edit/:id',
+    name: 'EditProduct',
+    component: EditProduct,
+    meta: {
+        requiresAuth: true
     }
+},
+{
+    path: '/productdetail/:id',
+    name: 'ProductDetail',
+    component: ProductDetail
+},
+{
+    path: '/manage/products/index',
+    name: 'IndexProduct',
+    component: IndexProduct,
+    meta: {
+        requiresAuth: true
+    }
+},
+{
+  path: '/manage/products/add',
+  name: 'AddProduct',
+  component: AddProduct,
+  meta: {
+      requiresAuth: true
+  }
+},
 
   ]
 });
