@@ -25,4 +25,4 @@ $ npm start
 
 ## License
 
-MIT
+GPLv3
