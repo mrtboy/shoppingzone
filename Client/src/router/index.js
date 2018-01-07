@@ -1,18 +1,18 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/experiment/HelloWorld'
-import AboutUs from '@/components/AboutUs'
+// import AboutUs from '@/components/AboutUs'
 import Home from '@/components/Home'
 import Tasks from '@/components/Tasks'
 import Storage from '@/components/Storage'
 import Login from '@/components/Login'
 import Register from '@/components/Register'
-import Sadi_Products from '@/components/Sadi_Products'
-import TestApi from '@/components/TestApi'
-import Htask from '@/components/Htask'
-import Categories from '@/components/Categories'
-import Sadi_AddProduct from '@/components/Sadi_AddProduct'
-import Sadi_TestingEditDelProduct from '@/components/Sadi_TestingEditDelProduct'
+// import Sadi_Products from '@/components/Sadi_Products'
+// import TestApi from '@/components/TestApi'
+// import Htask from '@/components/Htask'
+// import Categories from '@/components/Categories'
+// import Sadi_AddProduct from '@/components/Experiment/Sadi/Sadi_AddProduct'
+// import Sadi_TestingEditDelProduct from '@/components/Sadi_TestingEditDelProduct'
 import m_AddProductss from '@/components/m_AddProductss'
 import m_AboutUs from '@/components/m_AboutUs'
 import m_ContactUs from '@/components/m_ContactUs'
@@ -58,21 +58,21 @@ export default new Router({
         name: 'Sadi_Products',
         component: Sadi_Products
       },
-      {
-        path: '/testapi',
-        name: 'TestApi',
-        component: TestApi
-      },
-      {
-        path: '/htask',
-        name: 'Htask',
-        component: Htask
-      },
-      {
-        path: '/categories',
-        name: 'Categories',
-        component: Categories
-      },
+      // {
+      //   path: '/testapi',
+      //   name: 'TestApi',
+      //   component: TestApi
+      // },
+      // {
+      //   path: '/htask',
+      //   name: 'Htask',
+      //   component: Htask
+      // },
+      // {
+      //   path: '/categories',
+      //   name: 'Categories',
+      //   component: Categories
+      // },
       {
         path: '/sadi_addproduct',
         name: 'Sadi_AddProduct',
@@ -113,33 +113,27 @@ export default new Router({
       name: 'Register',
       component: Register
     },
-    {
-      path: '/product',
-      name: 'Product',
-      component: Product
-    },
-    {
-      path: '/apitest',
-      name: 'Apitest',
-      component: Apitest
-    },
-    {
-      path: '/htask',
-      name: 'Htask',
-      component: Htask
-    },
-    {
-      path: '/categories',
-      name: 'Categories',
-      component: Categories
-    },
-
-    {
-      path: '/shule',
-      name: 'Shule',
-      component: Shule
-    },
-     { path: '/m_addproductss',
+    // {
+    //   path: '/product',
+    //   name: 'Product',
+    //   component: Product
+    // },
+    // {
+    //   path: '/apitest',
+    //   name: 'Apitest',
+    //   component: Apitest
+    // },
+    // {
+    //   path: '/htask',
+    //   name: 'Htask',
+    //   component: Htask
+    // },
+    // {
+    //   path: '/categories',
+    //   name: 'Categories',
+    //   component: Categories
+    // },
+  { path: '/m_addproductss',
       name: 'm_AddProductss',
       component: m_AddProductss
     },
