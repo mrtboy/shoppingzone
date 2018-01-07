@@ -53,11 +53,11 @@ export default new Router({
             name: 'Register',
             component: Register
         },
-      {
-        path: '/sadi_products',
-        name: 'Sadi_Products',
-        component: Sadi_Products
-      },
+      // {
+      //   path: '/sadi_products',
+      //   name: 'Sadi_Products',
+      //   component: Sadi_Products
+      // },
       // {
       //   path: '/testapi',
       //   name: 'TestApi',
