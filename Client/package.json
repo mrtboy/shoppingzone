@@ -2,7 +2,7 @@
   "name": "Client",
   "version": "1.0.0",
   "description": "nothing much ast the moment",
-  "author": "farzin",
+  "author": "Farzin Khoshneyat, Mohammadreza Taleghani Esfahani, A B M Shamsuzzaman Sadi, Farjana Islam, Sadam Hussain, Mehrdad Saraee",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",

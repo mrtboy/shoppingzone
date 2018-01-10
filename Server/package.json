@@ -13,7 +13,7 @@
       "latest"
     ]
   },
-  "author": "Farzin",
+  "author": "Farzin Khoshneyat, Mohammadreza Taleghani Esfahani, A B M Shamsuzzaman Sadi, Farjana Islam, Sadam Hussain, Mehrdad Saraee",
   "license": "ISC",
   "dependencies": {
     "@types/axios": "^0.14.0",

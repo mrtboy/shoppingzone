@@ -4,6 +4,7 @@ module.exports = app => {
     const repo = app.repositories.sql.ProductRepository;
     const validator = app.models.viewmodels.product.ProductValidationViewModel;
 
+    //Get the user Items from Database
     app.route("/products/profile/repo/items")
         .all(app.xticate.authenticate())
 
@@ -15,6 +16,7 @@ module.exports = app => {
         })
     });
 
+    //Post Products location
     app.post("/products/inraduis", (req, res) => {
         let model = req.body
         repo.findDistance(model, result => {
@@ -22,6 +24,8 @@ module.exports = app => {
             res.json({ distance: result });
         })
     });
+
+    //Get Products that 3 Km far from buyer
     app.get("/products", (req, res) => {
         app.xticate.profileProvider(req, result => {
             let desiredDistance = 3;
@@ -76,11 +80,7 @@ module.exports = app => {
         });
     });
 
-
-
-
-
-
+    //Get Product by ID
     app.route("/products/:id")
         .get((req, res) => {
             console.log("------------------product/:id-------------------")
@@ -105,6 +105,7 @@ module.exports = app => {
             })
         });
 
+    //Save Product to Database
     app.route("/products")
         .all(app.xticate.authenticate())
         .post(validator.validate(),
@@ -126,6 +127,7 @@ module.exports = app => {
                     });
                 }
             })
+            //Update Product to Database
         .put((req, res) => {
             var model = req.body
             model.profile_id = req.user.id
@@ -137,7 +139,7 @@ module.exports = app => {
 
 
 
-
+        //Delete Product from Database
     app.route("/products/:id")
         .all(app.xticate.authenticate())
         .delete((req, res) => {

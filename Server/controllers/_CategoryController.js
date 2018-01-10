@@ -1,3 +1,6 @@
+//Deprecated Controller. (Change database from Mongo to Sqlite)
+
+
 module.exports = app => {
     const repo = app.repositories.CategoryRepository;
 

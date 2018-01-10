@@ -1,3 +1,6 @@
+//Depricated Controller 
+
+
 // module.exports = app => {
 //     const repo = app.repositories.ProductRepository;
 
