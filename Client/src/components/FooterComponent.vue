@@ -1,28 +1,31 @@
-
 <template>
-    <footer class="footer bg-light">
+    <footer class="foot bg-light">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
             <ul class="list-inline mb-2">
               <li class="list-inline-item">
-                <a href="#">About</a>
+                <router-link  :to="'/'">Home</router-link>
               </li>
               <li class="list-inline-item">&sdot;</li>
               <li class="list-inline-item">
-                <a href="#">Contact</a>
+                <router-link  :to="'/manage/products/add'">Sell</router-link>
               </li>
               <li class="list-inline-item">&sdot;</li>
               <li class="list-inline-item">
-                <a href="#">Sell</a>
+                <router-link  :to="'/manage/products/index'">My Products</router-link>
               </li>
               <li class="list-inline-item">&sdot;</li>
               <li class="list-inline-item">
-                <a href="#">Wish Lists</a>
+                <router-link  :to="'/manage/products/statistics'">Statistics</router-link>
               </li>
               <li class="list-inline-item">&sdot;</li>
               <li class="list-inline-item">
-                <a href="#">Manage Products</a>
+                <router-link  :to="'/contactUs'">Contact Us</router-link>
+              </li>
+               <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <router-link  :to="'/about'">About Us</router-link>
               </li>
             </ul>
             <p class="text-muted small mb-4 mb-lg-0">&copy; Shopping Zone 2017. All Rights Reserved.</p>
@@ -35,7 +38,7 @@
 
 
 <script>
-import "../assets/styles/homeStyle.css"
+// import "../assets/styles/homeStyle.css"
 export default {
   name: "Footer",
   data() {
@@ -46,6 +49,12 @@ export default {
 
 <!-- Add 'scoped' attribute to limit CSS to this component only -->
 <style scoped>
+.foot {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+
 .title {
   font-family: "Russo One", sans-serif;
 }

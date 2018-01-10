@@ -6,7 +6,7 @@ module.exports = app => {
     return {
         validate: () => {
             return [
-                check('description').exists().withMessage("description should be fucking there")
+                //check('description').exists().withMessage("description should be fucking there")
             ]
         },
         response: (req, res) => {

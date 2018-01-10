@@ -1,7 +1,7 @@
 {
   "name": "Client",
   "version": "1.0.0",
-  "description": "nothing much at the moment",
+  "description": "nothing much ast the moment",
   "author": "farzin",
   "private": true,
   "scripts": {
@@ -14,11 +14,17 @@
     "axios": "^0.17.1",
     "bootstrap": "^4.0.0-beta.2",
     "bootstrap-vue": "^1.0.2",
-    "jquery": "^1.12.4",
+    "jquery": "^1.9.1",
     "vue": "^2.5.2",
     "vue-axios": "^2.0.2",
+    "vue-image-lightbox": "^5.5.3",
+    "vue-lazyload": "^1.1.4",
     "vue-router": "^3.0.1",
-    "vue-toasted": "^1.1.22"
+    "vue-toasted": "^1.1.22",
+    "vue-touch": "^2.0.0-beta.4",
+    "vue2-dropzone": "^3.0.3",
+    "vue2-google-maps": "^0.8.4",
+    "vuelidate": "^0.6.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

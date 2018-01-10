@@ -2,7 +2,7 @@
   <div class="row justify-content-center">
 			<div class="card m-5 p-2" style="width: 30rem;">
   <div class="card-body">
-    <h4 class="card-title">Sign Up Bitte</h4>
+    <h4 class="card-title">Sign Up</h4>
     <h6 class="card-subtitle mb-4 text-muted ">please enter your desired email and password</h6>
     
 
@@ -49,6 +49,9 @@
     </div>   
   </div>
 </form>
+
+
+
 
 
 
