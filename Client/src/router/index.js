@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import AboutPage from '@/components/AboutPage'
 import Home from '@/components/Home'
 import Tasks from '@/components/Tasks'
 import Storage from '@/components/Storage'
@@ -15,6 +14,7 @@ import Profile from '@/components/Profile'
 import Search from '@/components/Search'
 import ProductDetail from '@/components/ProductDetail'
 import ContactUs from '@/components/ContactUs'
+import AboutUs from '@/components/AboutUs'
 
 Vue.use(Router)
 
@@ -27,8 +27,8 @@ let router = new Router({
         },
         {
             path: '/about',
-            name: 'AboutPage',
-            component: AboutPage
+            name: 'AboutUs',
+            component: AboutUs
         },
         {
             path: '/tasks',
