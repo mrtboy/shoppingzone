@@ -1,10 +1,11 @@
 const { check, validationResult } = require('express-validator/check');
 const { matchedData, sanitize } = require('express-validator/filter');
 
-
+//a model to match the data coming from the client
 module.exports = app => {
     return {
         validate: () => {
+            //rules to validate
             return [
                 check('name').exists().withMessage("name can not be empty"),
                 check('description').exists().withMessage("description can not be empty")

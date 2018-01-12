@@ -5,7 +5,7 @@ import fs from "fs";
 import path from "path";
 
 let db = null;
-
+///database initialization using sequelize orm
 module.exports = app => {
     if (!db) {
         //const config = app.libs.configuration;

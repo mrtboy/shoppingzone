@@ -1,3 +1,4 @@
+//category model => sql category table
 module.exports = (sequelize, DataTypes) => {
     const Categories = sequelize.define("Categories", {
         id: {

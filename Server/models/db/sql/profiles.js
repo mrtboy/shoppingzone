@@ -1,5 +1,6 @@
 import bcrypt from "bcrypt";
 
+// ///prfoiel model => sql profile table
 module.exports = (sequelize, DataType) => {
     const Profiles = sequelize.define("Profiles", {
         id: {

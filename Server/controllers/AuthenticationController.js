@@ -2,10 +2,12 @@ import jwt from "jwt-simple";
 import bcrypt from "bcrypt";
 import { validator } from 'express-validator';
 const { check, validationResult } = require('express-validator/check');
-
+//the endpoint for authentication => token generation
 module.exports = app => {
     const cfg = app.libs.configuration;
 
+
+    //repositories to deal with relevant entities
     const Profiles = app.libs.db.init.models.Profiles;
     const repo = app.repositories.sql.ProfileRepository;
     const validator = app.models.viewmodels.authentication.RegisterValidationViewModel;
@@ -19,6 +21,7 @@ module.exports = app => {
                     if (Profiles.isPassword(profile.password, password)) {
                         const content = { id: profile.id };
                         var token = jwt.encode({ id: content.id }, cfg.jwtSecret);
+                        //response back to client including 3 fields => token, isSuccessfull, and email
                         res.json({
                             token: token,
                             isSuccessfull: true,
@@ -44,12 +47,14 @@ module.exports = app => {
             res.sendStatus(401);
         }
     });
+    //registration endpoint
     app.post("/authentication/register", validator.validate(), (req, res) => {
         const errors = validator.response(req, res);
         var model = req.body;
 
         repo.profileExistsByEmail(model, (result) => {
             console.log(result)
+                //to check whether email currently exits
             if (result === true)
                 res.status(500).json({ "message": "please choose another email address" });
             else {

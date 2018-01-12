@@ -4,6 +4,8 @@ const { matchedData, sanitize } = require('express-validator/filter');
 import * as fs from 'fs-extra'
 const uuid = require('uuid/v1');
 
+
+//a controller to manage images on server either temporary or permanent in such a way that comming image from the client will be renamed randomly and is saved the server 
 module.exports = app => {
     const repo = app.repositories.sql.ImageRepository;
 

@@ -1,3 +1,5 @@
+//task model => sql task table
+//an experimental model to learn and build upon the rest
 module.exports = (sequelize, DataTypes) => {
     const Tasks = sequelize.define("Tasks", {
         id: {

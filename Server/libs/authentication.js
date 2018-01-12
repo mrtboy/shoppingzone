@@ -1,6 +1,8 @@
 import passport from "passport";
 import { Strategy, ExtractJwt } from "passport-jwt";
 
+
+//passport and jwt strategy to generate token
 module.exports = app => {
     const Profiles = app.libs.db.init.models.Profiles;
     const cfg = app.libs.configuration;
@@ -38,6 +40,7 @@ module.exports = app => {
             //console.log(authentication)
             return authentication;
         },
+        //an extra function to retrieve the client by its token
         profileProvider: (req, result) => {
             let header = req.headers['authorization'];
             if (header != undefined) {

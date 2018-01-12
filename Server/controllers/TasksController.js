@@ -2,6 +2,7 @@ import { validator } from 'express-validator';
 const { check, validationResult } = require('express-validator/check');
 const { matchedData, sanitize } = require('express-validator/filter');
 
+//an experimental controller as a foundation to build the rest upon
 module.exports = app => {
     const repo = app.repositories.TaskRepository;
     const validator = app.models.viewmodels.task.TaskValidationViewModel;

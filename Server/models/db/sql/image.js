@@ -1,3 +1,4 @@
+//image model => sql image table
 module.exports = (sequelize, DataTypes) => {
     const Images = sequelize.define("Images", {
         id: {

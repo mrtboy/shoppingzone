@@ -1,7 +1,7 @@
 import cors from "cors";
 import bodyParser from "body-parser";
 const fileUpload = require('express-fileupload')
-
+    //series of middlewares and basic configuration of server
 module.exports = app => {
     app.set("port", 2000)
     app.set("json spaces", 4);

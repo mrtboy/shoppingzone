@@ -1,3 +1,4 @@
+//database configuration
 module.exports = {
     database: "sz",
     username: "",

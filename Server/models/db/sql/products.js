@@ -1,3 +1,4 @@
+//product model => sql product table
 module.exports = (sequelize, DataTypes) => {
     const Products = sequelize.define("Products", {
         id: {
