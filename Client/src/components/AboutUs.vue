@@ -10,7 +10,7 @@
       </div>
      
     <div class="member">
-       <h2 class="member-header">Team Memebers</h2>
+       <h2 class="member-header">Team Members</h2>
         <ul class="list-group">
           <li class="list-group-item">A B M Shamsuzzaman Sadi</li>
           <li class="list-group-item">Farzin Khoshneyat (Team Lead)</li>
