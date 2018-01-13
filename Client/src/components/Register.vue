@@ -88,7 +88,8 @@ export default {
     test: function(){
       this.$toasted.show('rocket science');
     },
-    register: function() {     
+    register: function() { 
+      //if the entries are valid    
       if(!this.$v.$invalid){
         let gooz=this;        
           this.axios.post(this.$gc.getBaseUrl("authentication/register"), {

@@ -70,6 +70,7 @@ export default {
     test: function(){
       this.$toasted.show('rocket science');
     },
+    //check for valid entiries and then send it to server
     login: function() {     
       if(!this.$v.$invalid){
         let gooz=this;        
@@ -78,7 +79,7 @@ export default {
             password: gooz.password
           })
           .then(function(data){
-            
+            //update by result back from the serve
             if(data.data.isSuccessfull == true) {                          
               gooz.$auth.createToken(data.data.token);
               gooz.$auth.createProfile(data.data.email);

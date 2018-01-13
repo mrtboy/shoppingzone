@@ -10,6 +10,7 @@
 </template>
 
 <script>
+//experimental usage
 export default {
   name: 'Storage',
   data () {

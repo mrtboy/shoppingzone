@@ -38,6 +38,7 @@
 
 
 <script>
+//master footer of the application
 // import "../assets/styles/homeStyle.css"
 export default {
   name: "Footer",

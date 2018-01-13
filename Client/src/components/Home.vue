@@ -90,6 +90,7 @@ export default {
     }
   },
   methods: {
+    //search products
     search: function(){
       let those=this;
       if(!this.$v.$invalid){
@@ -102,6 +103,7 @@ export default {
       }
     }
   },
+  //initialization code
   mounted: function() {          
     
     let those=this;        

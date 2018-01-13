@@ -3,6 +3,7 @@
 </template>
 
 <script>
+//this is just a template and is not being used by the application
 export default {
   name: 'CustomHeader',
   data () {

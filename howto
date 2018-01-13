@@ -1,0 +1,11 @@
+this project has 2 parts 
+
+server
+client
+
+after cloning the source npm install command should be run inside the both server and client folders.
+after a successfull dependency installation both can be run by
+npm run command.
+
+it is worth mentioning that the image folder and database are automatically created and managed
+by server so there is need to take cate of them as n-pm run will take care of them.

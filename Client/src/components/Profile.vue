@@ -168,6 +168,9 @@ export default {
     }
   },
   methods: {    
+    //if entries are valied based on aforementioned criteria then the profile
+    //is sent over to the server to be updated
+    
     update: function() {     
       if(!this.$v.$invalid){
         let that = this;
@@ -200,6 +203,7 @@ export default {
     }
   },
   mounted: function() {    
+    //upon page load the current user profile will be loaded into the page
     let zoo=this;        
           this.axios.get(this.$gc.getBaseUrl("profiles"), { headers: this.$auth.AH() })
           .then(function(data){

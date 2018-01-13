@@ -109,26 +109,33 @@ export default {
     }
   },
   methods: {
+      //check the user status
       isSignedIn: function(){
       return this.$auth.isSignedIn();
-    },
+    },    
+      //to get the item image from server
       getImageAddress : function(image) {
           return this.$gc.getBaseUrl("resources/images/" + this.id + "/" + image)
       },
+      //the index of the image clicked is passed to this function and then it
+      //willopen the image gallery
       openGallery(index) {
       this.$refs.lightbox.showImage(index)
     },
+    //register
     chatOn: function(){
         var profile = this.$auth.getProfile();
         this.socket.send(`${profile}~${profile}`);
         this.hideChatClass = !this.hideChatClass;
         this.showChatClass = !this.showChatClass;
     },
+    //deregister
     chatOff: function(){
         
         this.hideChatClass = true;
         this.showChatClass = false;
     },
+    //send any message to server
     send: function(){
         let that = this;
             

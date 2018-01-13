@@ -63,6 +63,7 @@ export default {
     }  
   },
   mounted: function() {  
+    //logic to show menus and button based on user login status
     this.signedin = this.isSignedIn(); 
      if(this.$router.history.current.path == "/login")
         this.signinVisibility = false;
@@ -75,6 +76,7 @@ export default {
   },
   watch: {
         '$route': function(value) {
+          //a watch for changes on route
 
             this.signedin = this.isSignedIn();
             if(value.path == "/login")

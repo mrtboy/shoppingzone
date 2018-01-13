@@ -11,6 +11,7 @@
 
 <script>
 export default {
+  //experimenta usage
   name: 'Home',
   data () {
     return {
